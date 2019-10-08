@@ -3,177 +3,10 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700" rel="stylesheet">
+<link href="living_styles.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-/*Specialized Divs*/
-div.container {
-    background-color: white;
-    color:rgb(65,65,65);
-    margin: 30px 15px 30px 15px;
-    padding: 0;
-}
-div.widge {
-    background-color: rgb(230,230,230);
-    color:rgb(65,65,65);
-    padding: 0;
-    border-top: 1px solid rgb(200,200,200);
-    margin: 0;
-    clear: both;
-}
-div.image {
-    display: block;
-    position: relative;
-}
-div.transbox {
-    background-color: white;
-    width: 42%;
-    height: 42%;
-    opacity: 0.94;
-    top: 25%;
-    left: 26%;
-    position: absolute;
-    padding: 2em 1.5em 1.5em 1.5em;
-    margin: 20px;
-    overflow: hidden;
-}
-
-/*Headings and Fonts*/
-h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 36px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 10px;
-    letter-spacing: 2px;
-}
-h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 24px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 2px;
-}
-h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 15px;
-    letter-spacing: 2px;
-}
-h4 {
-    font-family: 'Playfair Display', serif;
-    font-size: 13px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 15px;
-    letter-spacing: 2px;
-}
-p {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 200;
-    line-height: 20px;
-    line-height: 150%;
-}
-
-/*Header and Footer*/
-header {
-    padding: 2em;
-    padding-top: 2.5em;
-    padding-bottom: 1.8em;
-    color: black;
-    background-color: white;
-    clear: left;
-    text-align: center;
-}
-footer {
-    padding: 3em;
-    color: white;
-    background-color: rgb(70,70,70);
-    clear: left;
-    text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 13px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    letter-spacing: 2px;
-}
-
-/*Top Navigation Bar*/
-nav {
-    width: 100%;
-    float: left;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-nav ul {
-    display: inline-block;
-    text-align: center;
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(120,208,212);
-}
-nav ul li {
-    float: left;
-    text-align: center;
-}
-nav ul li:after { 
-    content: " \2022";
-    color:white;
-    opacity: 0.8;
- }
-nav ul li:last-child:after { 
-    content: ""; 
-}
-nav ul li a {
-    display: inline-block;
-    color: black;
-    font-size: 14px;
-    font-weight: 600;
-    font-family: 'Source Sans Pro', sans-serif;
-    color:rgb(65,65,65);
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-}
-
-/*Links*/
-a {
-    color: rgb(52, 123, 124);
-    text-decoration: none;
-}
-
-/*Table*/
-table {
-    padding: 20px;
-}
-td.par {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-/*Body Elements*/
-article {
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 1em;
-    overflow: hidden;
-}
-</style> 
 </head>
-<body style="background-color:black;"> 
+<body style="background-color:black;">
 
 <div class="container">
 
@@ -184,18 +17,16 @@ article {
 
 <!-- TOP NAVIGATION BAR -->
 
-<nav>
- <div style="align-items:center;background-color: rgb(120,208,212); border-bottom: 2px solid rgb(100,180,188);">
+<nav role="top">
   <ul>
     <li><a href="#">HOME</a></li>
     <li><a href="KAY_ABOUTME.html">ABOUT ME</a></li>
-    <li><a href="http://www.kaycoleman807.com">#KAYINLA</a></li>
+    <li><a href="KayInLA.html">#KAYINLA</a></li>
     <li><a href="KAY_DANCINGQUEEN.html">DANCING QUEEN</a></li>
     <li><a href="KAY_PHOTOSHOOTS.html">PHOTOSHOOTS</a></li>
     <li><a href="#">BLOG</a></li>
     <li><a href="KAY_CONTACT.html">CONTACT</a></li>
   </ul>
- </div>
 </nav>
 
 <p><br></p>
@@ -203,7 +34,7 @@ article {
 <!-- WELCOME MESSAGE -->
 
 <div class="image">
-<img src="KAY_HOME.jpg" alt= "KAY_HOME" width="100%">
+<img src="KayImages/KAY_HOME.jpg" alt= "KAY_HOME" width="100%">
     <div class="transbox" align="center">
        <h2 style="line-height: 44px;">WELCOME</h2><p>Welcome to the land of Kay. I'm a dancer, fashionista, and naturalista all-in-one. I talk about my dance experiences and share some of my favorite fashion finds and beauty products on my blog. You can find out where I'm teaching next on my <a href="KAY_DANCINGQUEEN.html">Dancing Queen</a> page, and find out more about me and why I created this site on the <a href="KAY_ABOUTME.html">About Me</a> page. Well what are you waiting for? Go ahead and explore!</p>
     </div>
@@ -214,25 +45,25 @@ article {
 <table style="width:100%">
   <tr>
     <th><h3>- DANCER -</h3></th>
-    <th><h3>- FASHIONISTA -</h3></th> 
+    <th><h3>- FASHIONISTA -</h3></th>
     <th><h3>- NATURALISTA -</h3></th>
   </tr>
   <tr>
-    <td style="text-align: center;"><img src="KAY_HOME_DANCER.jpg" alt= "KAY_HOME_DANCER" width= auto; height=450px></td>
-    <td style="text-align: center;"><img src="KAY_HOME_FASHIONISTA.jpg" alt= "KAY_HOME_FASHIONISTA" width= auto; height="450px"></td> 
-    <td style="text-align: center;"><img src="KAY_HOME_NATURALISTA.jpg" alt= "KAY_HOME_NATURALISTA" width= auto; height="450px"></td>
+    <td style="text-align: center;"><img src="KayImages/KAY_HOME_DANCER.jpg" alt= "KAY_HOME_DANCER" width= auto; height=450px></td>
+    <td style="text-align: center;"><img src="KayImages/KAY_HOME_FASHIONISTA.jpg" alt= "KAY_HOME_FASHIONISTA" width= auto; height="450px"></td>
+    <td style="text-align: center;"><img src="KayImages/KAY_HOME_NATURALISTA.jpg" alt= "KAY_HOME_NATURALISTA" width= auto; height="450px"></td>
   </tr>
   <tr>
-    <td class="par"><p>I'm a semi-professional dancer from New Jersey, but in recent years, the North Carolina dance community has become my family. I think of myself as a student first, so I'm always training and perfecting my craft. My dream is to dance on tour for a major recording artist. I'm on the path to making this dream come true, and I'm excited for the journey. Hear about some of my dance experiences on the Dance is Life page of my blog, and find out where I'll be teaching next on the <a href="https://kaycoleman807.wordpress.com/dancing-queen/">Dancing Queen</a> page.</p></td>
-    <td class="par"><p>I love fashion, and I would consider myself a bit of a fashionista. I enjoy putting pieces together to create my own unique style which I would characterize as classic chic with a splash of trendy. As a graduate student, I'm on a tight budget, but I like to look my best no matter what the occasion. Finding fashionable clothing at reasonable prices is my mission, so I'm always on the hunt for a great bargain. Trust me, you can be fashionable without breaking the bank. Browse my latest fashion finds on the <a href="https://kaycoleman807.wordpress.com/classic-chic/">Classic Chic</a> page of my blog.</p></td> 
-    <td class="par"><p>I call myself a naturalista because I'm obsessed with all things natural. From natural hair, to organic food, to natural cleaning products. I've even been known to dabble in all-natural DIY skincare products. I want to make sure the products I'm using on my hair and skin are not harmful to my body. I always check the ingredient labels to see what's really inside these magic potions and lotions. Check out some of my favorite all natural beauty and household cleaning products on the <a href="https://kaycoleman807.wordpress.com/au-natural/">Au Natural</a> page of my blog.</p></td>
+    <td class="home"><p>I'm a semi-professional dancer from New Jersey, but in recent years, the North Carolina dance community has become my family. I think of myself as a student first, so I'm always training and perfecting my craft. My dream is to dance on tour for a major recording artist. I'm on the path to making this dream come true, and I'm excited for the journey. Hear about some of my dance experiences on the Dance is Life page of my blog, and find out where I'll be teaching next on the <a href="KAY_DANCINGQUEEN.html">Dancing Queen</a> page.</p></td>
+    <td class="home"><p>I love fashion, and I would consider myself a bit of a fashionista. I enjoy putting pieces together to create my own unique style which I would characterize as classic chic with a splash of trendy. As a graduate student, I'm on a tight budget, but I like to look my best no matter what the occasion. Finding fashionable clothing at reasonable prices is my mission, so I'm always on the hunt for a great bargain. Trust me, you can be fashionable without breaking the bank. Browse my latest fashion finds on the <a href="https://kaycoleman807.wordpress.com/classic-chic/">Classic Chic</a> page of my blog.</p></td>
+    <td class="home"><p>I call myself a naturalista because I'm obsessed with all things natural. From natural hair, to organic food, to natural cleaning products. I've even been known to dabble in all-natural DIY skincare products. I want to make sure the products I'm using on my hair and skin are not harmful to my body. I always check the ingredient labels to see what's really inside these magic potions and lotions. Check out some of my favorite all natural beauty and household cleaning products on the <a href="https://kaycoleman807.wordpress.com/au-natural/">Au Natural</a> page of my blog.</p></td>
   </tr>
 </table>
 
 <div class="widge">
 <h4 style="text-align: center;">- INSTAGRAM -</h4>
 <p> <br> <br> <br> <br> <br> </p>
-<!-- <script type="text/javascript" src="instafeed.min.js"> 
+<!-- <script type="text/javascript" src="instafeed.min.js">
     var feed = new Instafeed({
         get: 'user',
         userId: '212387108',

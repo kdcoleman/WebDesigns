@@ -1,0 +1,327 @@
+/*
+Theme Name: Living
+Theme URI: http://kaycoleman807.com
+Author: Kay Coleman
+Author URI: http://kaycoleman807.com
+Description: The theme to accompany the wptutsplus series on creating a WordPress theme from static HTML.
+Version: 3.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/*Specialized Divs*/
+div.container {
+    background-color: white;
+    color:rgb(65,65,65);
+    margin: 30px 15px 30px 15px;
+    padding: 0;
+}
+div.pag {
+    background-color: white;
+    color:rgb(65,65,65);
+    padding: 50px;
+    padding-top: 40px;
+    margin-right: 28%;
+    overflow: hidden;
+}
+div.widge {
+    background-color: rgb(230,230,230);
+    color:rgb(65,65,65);
+    padding: 0;
+    border-top: 1px solid rgb(200,200,200);
+    margin: 0;
+    clear: both;
+}
+div.image {
+    display: block;
+    position: relative;
+}
+div.transbox {
+    background-color: white;
+    width: 42%;
+    height: 42%;
+    opacity: 0.94;
+    top: 25%;
+    left: 26%;
+    position: absolute;
+    padding: 2em 1.5em 1.5em 1.5em;
+    margin: 20px;
+    overflow: hidden;
+}
+div.img_port_small {
+    margin: 3px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 152px;
+}
+div.img_port_small:hover {
+    border: 1px solid #777;
+}
+div.img_port_small img {
+    width: 100%;
+    height: auto;
+}
+div.img_port_medium {
+    margin: 3px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 190px;
+}
+div.img_port_medium:hover {
+    border: 1px solid #777;
+}
+div.img_port_medium img {
+    width: 100%;
+    height: auto;
+}
+div.img_port_large {
+    margin: 3px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 205px;
+}
+div.img_port_large:hover {
+    border: 1px solid #777;
+}
+div.img_port_large img {
+    width: 100%;
+    height: auto;
+}
+div.img_land {
+    margin: 3px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 433px;
+}
+div.img_land:hover {
+    border: 1px solid #777;
+}
+div.img_land img {
+    width: 100%;
+    height: auto;
+}
+
+/*Headings and Fonts*/
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 10px;
+    letter-spacing: 2px;
+}
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 2px;
+}
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 2px;
+}
+h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 2px;
+}
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 200;
+    line-height: 20px;
+    line-height: 150%;
+}
+
+/*Links*/
+a {
+    color: rgb(52, 123, 124);
+    text-decoration: none;
+}
+
+/*Header and Footer*/
+header {
+    padding: 2em;
+    padding-top: 2.5em;
+    padding-bottom: 1.8em;
+    color: black;
+    background-color: white;
+    clear: left;
+    text-align: center;
+}
+footer {
+    padding: 3em;
+    color: white;
+    background-color: rgb(70,70,70);
+    clear: left;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+/*Top Navigation Bar Elements*/
+nav[role="top"] {
+    width: 100%;
+    float: left;
+    align-items:center;
+    background-color: rgb(120,208,212);
+    border-bottom: 2px solid rgb(100,180,188);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav[role="top"] ul {
+    display: inline-block;
+    text-align: center;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(120,208,212);
+}
+nav[role="top"] ul li {
+    float: left;
+    text-align: center;
+}
+nav[role="top"] ul li:after {
+    content: " \2022";
+    color:white;
+    opacity: 0.8;
+ }
+nav[role="top"] ul li:last-child:after {
+    content: "";
+}
+nav[role="top"] ul li a {
+    display: inline-block;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif;
+    color:rgb(65,65,65);
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/*Side Navigation Bar Elements*/
+nav[role="side"] {
+    float: right;
+    padding: 50px;
+    padding-top: 40px;
+    text-align: center;
+}
+nav[role="side"] ul {
+    display: inline-block;
+    width: 210px;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+nav[role="side"] ul li {
+    text-align: left;
+    border-top: 1px solid rgb(230,230,230);
+}
+nav[role="side"] ul li a {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(111, 156, 156);
+    text-align: left;
+    text-decoration: none;
+}
+nav[role="side"] ul li a:hover {
+    color: rgb(128,128,128);
+}
+
+/*Side Nav Bar Search*/
+input[type=text].search {
+    width: 210px;
+    box-sizing: border-box;
+    border: 1px solid rgb(230,230,230);
+    border-radius: 0px;
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: white;
+    padding: 10px;
+}
+input[type=text].search:focus {
+    outline: 1px solid rgb(111, 156, 156);
+}
+
+/*Form Elements*/
+form {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+input[type=text] {
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid rgb(230,230,230);
+    border-radius: 0px;
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: white;
+    padding: 10px;
+}
+input[type=text]:focus {
+    outline: 1px solid rgb(111, 156, 156);
+}
+textarea {
+    border: 1px solid rgb(230,230,230);
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 10px;
+}
+textarea:focus {
+    outline: 1px solid rgb(111, 156, 156);
+}
+span.note {
+    font-size: 100%;
+    color: rgb(200,200,200);
+}
+
+/*Table*/
+table {
+    padding: 20px;
+}
+td.home {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+td.par {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+}
+/*Body Elements*/
+article {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 1em;
+    overflow: hidden;
+}
