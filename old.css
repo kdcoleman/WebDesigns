@@ -1,0 +1,210 @@
+/*
+Theme Name: KayInLA
+Theme URI: http://kaycoleman807.com
+Author: Kay Coleman
+Author URI: http://kaycoleman807.com
+Description: The theme to accompany the wptutsplus series on creating a WordPress theme from static HTML. 
+Version: 3.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/*Specialized Divs*/
+div.container {
+    background-color: white;
+    color:rgb(65,65,65);
+    margin: 30px 15px 30px 15px;
+    padding: 0;
+}
+div.widge {
+    background-color: rgb(230,230,230);
+    color:rgb(65,65,65);
+    padding: 0;
+    border-top: 1px solid rgb(200,200,200);
+    margin: 0;
+    clear: both;
+}
+div.image {
+    display: block;
+    position: relative;
+}
+div.transbox {
+    background-color: white;
+    width: 42%;
+    height: 42%;
+    opacity: 0.94;
+    top: 25%;
+    left: 26%;
+    position: absolute;
+    padding: 2em 1.5em 1.5em 1.5em;
+    margin: 20px;
+    overflow: hidden;
+}
+
+/*Headings and Fonts*/
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 10px;
+    letter-spacing: 2px;
+}
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 2px;
+}
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 2px;
+}
+h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 2px;
+}
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 200;
+    line-height: 20px;
+    line-height: 150%;
+}
+
+/*Header and Footer*/
+header {
+    padding: 2em;
+    padding-top: 2.5em;
+    padding-bottom: 1.8em;
+    color: black;
+    background-color: white;
+    clear: left;
+    text-align: center;
+}
+footer {
+    padding: 3em;
+    color: white;
+    background-color: rgb(70,70,70);
+    clear: left;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+/*Top Navigation Bar*/
+nav {
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav ul {
+    display: inline-block;
+    text-align: center;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(120,208,212);
+}
+nav ul li {
+    float: left;
+    text-align: center;
+}
+nav ul li:after { 
+    content: " \2022";
+    color:white;
+    opacity: 0.8;
+ }
+nav ul li:last-child:after { 
+    content: ""; 
+}
+nav ul li a {
+    display: inline-block;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif;
+    color:rgb(65,65,65);
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/*Links*/
+a {
+    color: rgb(52, 123, 124);
+    text-decoration: none;
+}
+
+/*Table*/
+table {
+    padding: 20px;
+}
+td.par {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*Body Elements*/
+article {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 1em;
+    overflow: hidden;
+}
+
+/* Images */
+ 
+img {
+    max-width: 100%;
+}
+#content img {
+    margin: 0;
+    height: auto;
+    width: auto;
+}
+#content .alignleft,
+#content img.alignleft {
+    float: left;
+    margin: 4px 4% 4px 0;
+}
+#content .alignright,
+#content img.alignright {
+    float: right;
+    margin: 4px 0 4px 4%;
+}
+#content .aligncenter,
+#content img.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content img.alignleft,
+#content img.alignright,
+#content img.aligncenter {
+    margin-bottom: 12px;
+}

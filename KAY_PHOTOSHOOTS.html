@@ -1,0 +1,387 @@
+!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8"> <!-- Need this for emojis to show -->
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700" rel="stylesheet">
+<style>
+/*Specialized Divs*/
+div.container {
+    background-color: white;
+    color:rgb(65,65,65);
+    margin: 20px 15px 10px 15px;
+    padding: 0;
+}
+div.pag {
+    background-color: white;
+    color:rgb(65,65,65);
+    padding: 50px;
+    padding-top: 40px;
+    margin-right: 28%;
+    overflow: hidden;
+}
+div.img_port_small {
+    margin: 3px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 152px;
+}
+
+div.img_port_small:hover {
+    border: 1px solid #777;
+}
+
+div.img_port_small img {
+    width: 100%;
+    height: auto;
+}
+div.img_port_medium {
+    margin: 3px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 190px;
+}
+
+div.img_port_medium:hover {
+    border: 1px solid #777;
+}
+
+div.img_port_medium img {
+    width: 100%;
+    height: auto;
+}
+div.img_port_large {
+    margin: 3px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 205px;
+}
+
+div.img_port_large:hover {
+    border: 1px solid #777;
+}
+
+div.img_port_large img {
+    width: 100%;
+    height: auto;
+}
+div.img_land {
+    margin: 3px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 433px;
+}
+
+div.img_land:hover {
+    border: 1px solid #777;
+}
+
+div.img_land img {
+    width: 100%;
+    height: auto;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+div.widge {
+    background-color: rgb(230,230,230);
+    color:rgb(65,65,65);
+    padding: 0;
+    border-top: 1px solid rgb(200,200,200);
+    margin-top: 10px;
+    margin-bottom: 0;
+    clear:both;
+}
+
+/*Header and Footer*/
+header {
+    padding: 2em;
+    padding-top: 2.5em;
+    padding-bottom: 1.8em;
+    color: black;
+    background-color: white;
+    clear: left;
+    text-align: center;
+}
+footer {
+    padding: 3em;
+    color: white;
+    background-color: rgb(70,70,70);
+    clear: left;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+/*Headings and Fonts*/
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 10px;
+    letter-spacing: 2px;
+}
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 2px;
+}
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18.5px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 2px;
+    padding-top: 18px;
+    padding-bottom: 12px;
+}
+h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 2px;
+}
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    line-height: 20px;
+    line-height: 150%;
+}
+
+/*Top Navigation Bar Elements*/
+nav[role="top"] {
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav[role="top"] ul {
+    display: inline-block;
+    text-align: center;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(120,208,212);
+}
+nav[role="top"] ul li {
+    float: left;
+    text-align: center;
+}
+nav[role="top"] ul li:after { 
+    content: " \2022";
+    color:white;
+    opacity: 0.8;
+ }
+nav[role="top"] ul li:last-child:after { 
+    content: ""; 
+}
+nav[role="top"] ul li a {
+    display: inline-block;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif;
+    color:rgb(65,65,65);
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/*Side Navigation Bar Elements*/
+nav[role="side"] {
+    float: right;
+    padding: 50px;
+    padding-top: 40px; 
+    text-align: center;
+}
+nav[role="side"] ul {
+    display: inline-block;
+    width: 210px;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+nav[role="side"] ul li {
+    text-align: left;
+    border-top: 1px solid rgb(230,230,230);
+}
+nav[role="side"] ul li a {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(111, 156, 156);
+    text-align: left;
+    text-decoration: none;
+}
+nav[role="side"] ul li a:hover {
+    color: rgb(128,128,128);
+}
+
+/* Links*/
+a {
+    color: rgb(52, 123, 124);
+    text-decoration: none;
+}
+
+/*Form Elements*/
+input[type=text].search {
+    width: 210px;
+    box-sizing: border-box;
+    border: 1px solid rgb(230,230,230);
+    border-radius: 0px;
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: white;
+    padding: 10px;
+}
+input[type=text].search:focus {
+    outline: 1px solid rgb(111, 156, 156);
+}
+/*Table Elements*/
+table {
+    padding: 20px;
+}
+td.par {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+}
+</style> 
+</head>
+
+<!-- THE CODE FOR THE PAGE STARTS HERE-->
+
+<body style="background-color:black;"> 
+
+<div class="container">
+
+<header>
+   <h1>KAY COLEMAN</h1>
+   <h4>LIVING MY DREAMS</h4>
+</header>
+
+<!-- NAVIGATION BAR -->
+
+<nav role="top">
+ <div style="align-items:center; background-color: rgb(120,208,212); border-bottom: 2px solid rgb(100,180,188);">
+  <ul>
+    <li><a href="KAY_HOME.html">HOME</a></li>
+    <li><a href="KAY_ABOUTME.html">ABOUT ME</a></li>
+    <li><a href="KayInLA.html">#KAYINLA</a></li>
+    <li><a href="KAY_DANCE.html">DANCING QUEEN</a></li>
+    <li><a href="#">PHOTOSHOOTS</a></li>
+    <li><a href="#">BLOG</a></li>
+    <li><a href="KAY_CONTACT.html">CONTACT</a></li>
+  </ul>
+ </div>
+</nav>
+
+<!-- SIDE NAV BAR CONTENT -->
+
+<nav role="side">
+    <ul>
+        <li style="text-align: center; border:0;"><h4>- SEARCH -</h4></li>
+        <li style="text-align: center; border:0;"><form><input class="search" type="text" name="search" placeholder="Search..."></form></li>
+        <li style="border: 0;"><h1></h1></li>
+        <li style="text-align: center; border:0;"><h4>- RECENT POSTS -</h4></li>
+        <li><a href="#">#KayInLA</a></li>
+        <li><a href="#">The Journey</a></li>
+        <li><a href="#">Chic Camel Fedora</a></li>
+        <li><a href="#">Talenti Treats</a></li>
+        <li><a href="#">Natural Hair Talk Pt. 1</a></li>
+</nav>
+
+
+<!-- PAGE CONTENT -->
+
+<div class="pag">
+  <h2 style="line-height: 40px;">PHOTOSHOOTS</h2>
+     <div class="img_port_small">
+        <img src="img_9988.jpg" alt="BlackGirlMagic_1">
+    </div>
+    <div class="img_port_small">
+        <img src="img_9987.jpg" alt="BlackGirlMagic_2">
+    </div>
+    <div class="img_port_small">
+        <img src="img_9991.jpg" alt="BlackGirlMagic_3">
+    </div>
+    <div class="img_port_small">
+        <img src="img_9989.jpg" alt="BlackGirlMagic_4">
+    </div>
+    <div class="img_port_medium">
+        <img src="img_9993.jpg" alt="BlackGirlMagic_5">
+    </div>
+    <div class="img_land">
+        <img src="img_9990.jpg" alt="BlackGirlMagic_6">
+    </div>
+    <div class="img_port_large">
+        <img src="img_9992.jpg" alt="BlackGirlMagic_7">
+    </div>
+    <div class="img_port_large">
+        <img src="img_9994.jpg" alt="BlackGirlMagic_8">
+    </div>
+    <div class="img_port_large">
+        <img src="img_9995.jpg" alt="BlackGirlMagic_9">
+    </div>
+    <div class="img_land">
+        <img src="img_9996.jpg" alt="BlackGirlMagic_10">
+    </div>
+    <div class="img_port_medium">
+        <img src="img_9997.jpg" alt="BlackGirlMagic_11">
+    </div> 
+    
+    <p style="text-align: center;font-weight: 600; clear: both;"><br> PHOTOGRAPHY BY:<a href="http://www.jdotdigitals.com" target="_blank"> J.DOT DIGITALS</a></p>
+</div>
+
+<!-- INSTAGRAM FEED WIDGET -->
+
+<div class="widge">
+<h4 style="text-align: center;">- INSTAGRAM -</h4>
+<p> <br> <br> <br> <br> <br> </p>
+<!-- <script type="text/javascript" src="instafeed.min.js"> 
+    var feed = new Instafeed({
+        get: 'user',
+        userId: '212387108',
+        clientId: 'kay.coleman807'
+    });
+    feed.run();
+</script>-->
+</div>
+
+<!-- FOOTER -->
+
+<footer>BLOG AT WORDPRESS.COM</footer>
+
+</div>
+</body>
+</html>

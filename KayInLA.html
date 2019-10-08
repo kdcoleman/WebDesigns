@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- <title>#KayInLA | Living My Dreams</title> -->
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+      $('nav[role="side"] ul li a').on('click', function(event) {
+          $(this).parentsUntil('nav[role="side"]').find('a').removeClass('active');
+          $(this).addClass('active');
+          // $(document).on("scroll", onScroll);
+      });
+
+  //       function onScroll(event){
+		// 	var scrollPosition = $(document).scrollTop();
+  //   		$('nav[role="side"] ul li a').each(function () {
+  //     		var currentLink = $(this);
+  //     		var refElement = $(currentLink.attr("href"));
+  //     		if (refElement.position().top <= scrollPosition
+  //         && refElement.position().top + refElement.height() > scrollPosition) {
+  //       	$('nav[role="side"] ul li a').removeClass("active");
+  //       	currentLink.addClass("active");
+  //     		}
+  //     	else{
+  //       	currentLink.removeClass("active");
+  //     	}
+  //   	});
+		// }
+</script>
+<style>
+/*Specialized Divs*/
+div.container {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+div.pag {
+	background-color: white;
+    color:#C9B269;
+    padding: 20px;
+    overflow: hidden;
+}
+div.image {
+	display: block;
+	position: relative;
+	margin-top: 10px;
+}
+div.bloc_logo {
+	background-color: white;
+	width: 44%;
+	height: auto;
+	padding: 10px;
+	margin: 20px;
+	overflow: hidden;
+	top: 24%;
+	left: 24%;
+	position: absolute;
+}
+div.text_logo {
+	border: 1px solid #C9B269;
+	width: 92%;
+	height: auto;
+	padding: 20px;
+	margin: 0;
+}
+div.bloc_about {
+	background-color: white;
+	width: 70%;
+	height: auto;
+	padding: 10px 10px 10px 10px;
+	margin: 20px;
+	overflow: hidden;
+	top: 25%;
+	left: 10%;
+	position: absolute;
+}
+div.text_about {
+	border: 1px solid #C9B269;
+	width: 95%;
+	height: auto;
+	padding: 20px;
+	margin: 0;
+}
+div.store_img {
+    margin: 30px 48px 10px 48px;
+    float: left;
+    width: 24%;
+}
+/*div.store_img:hover {
+    border: 1px solid #777;
+}*/
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+}
+div.desc a {
+	color: #C9B269;
+}
+
+/*Headings and Fonts*/
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 10px;
+    letter-spacing: 5px;
+}
+h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 2px;
+}
+h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 2px;
+}
+h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 2px;
+}
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    line-height: 150%;
+}
+hr {
+	border-bottom: 1px solid #C9B269;
+	border-right: 0;
+	border-left: 0;
+	border-top: 0;
+	width: 70%;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+/*Header and Footer*/
+header {
+    padding: 2em;
+    padding-top: 2.5em;
+    padding-bottom: 1.8em;
+    color: black;
+    background-color: white;
+    clear: left;
+    text-align: center;
+}
+footer {
+    padding: 3em;
+    color: white;
+    background-color: #B30E37;
+    clear: left;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+footer a {
+	color: white;
+}
+
+/*Top Navigation Bar Elements*/
+nav[role="top"] {
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav[role="top"] ul {
+    display: inline-block;
+    text-align: center;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+nav[role="top"] ul li {
+    float: left;
+    text-align: left;
+}
+nav[role="top"] ul li a {
+    display: inline-block;
+    color: #C9B269;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
+    padding: 15px 36px 25px 36px;
+    text-decoration: none;
+}
+nav[role="top"] ul li a:hover {
+	color: #B30E37;
+}
+/*nav[role="top"] ul li a:active {
+	color: #B30E37;
+}*/
+
+/*Side Navigation Bar Elements*/
+nav[role="side"] {
+    float: left;
+    text-align: center;
+    z-index:1;
+    position: fixed;
+    top: 24%;
+    left: 75%;
+}
+nav[role="side"] ul {
+    display: inline-block;
+    width: 210px;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+    background-color: none;
+    text-align: right;
+    list-style-position: inside;
+}
+nav[role="side"] ul li {
+    text-align: right;
+    margin: 0;
+    /*padding: 0;*/
+}
+nav[role="side"] ul li a {
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #C9B269;
+    text-align: right;
+    text-decoration: none;
+    border: 0;
+}
+
+nav[role="side"] ul li a:hover {
+    color: #B30E37;
+}
+// .active {
+// 	background-color: powderblue;
+// 	visibility: visible;
+// }
+// .active a {
+// 	background-color: powderblue;
+// 	visibility: visible;
+// }
+// a.active {
+// 	background-color: powderblue;
+// 	visibility: visible;
+// }
+// nav[role="side"] ul li a:active {
+//     background-color: powderblue;
+//     visibility: visible;
+}
+nav[role="side"] ul li a.circle {
+    /*display: inline-block;*/
+    background-color: transparent;
+	color: #B30E37;
+	border-radius: 50%;
+	border: 1px solid #C9B269;
+	margin-left: 10px;
+	padding: 5px;
+	display: inline-block;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 12px;
+}
+nav[role="side"] ul li a.circle:hover {
+    text-decoration: none;
+    background-color: #C9B269;
+}
+
+
+
+/*Links*/
+a {
+    color: #B30E37;
+    text-decoration: none;
+}
+
+/*Form Elements*/
+form {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: inline;
+}
+input[type=text] {
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #C9B269;
+    border-radius: 0px;
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: white;
+    padding: 10px;
+}
+input[type=text]:focus {
+    outline: 1px solid #B30E37;
+}
+textarea {
+    border: 1px solid #C9B269;
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 10px;
+}
+textarea:focus {
+    outline: 1px solid #B30E37;
+}
+span.note {
+    font-size: 100%;
+    color: rgb(200,200,200);
+}
+button[type=button] {
+	background-color: transparent;
+	color: #B30E37;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 12px;
+	border-radius: 50%;
+	border: 1px solid #C9B269;
+	padding: 7px;
+	/*margin: 0;*/
+	/*display: inline;*/
+}
+button[type=button]:hover {
+	background-color: #C9B269;
+}
+button[type=button]:active {
+	background-color: #C9B269;
+}
+
+/*Table*/
+table {
+    padding: 20px;
+}
+td.par {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*Body Elements*/
+article {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
+</head>
+<body style="background-color:white; margin: 0;">
+
+<div class="container" id="pagecontent">
+
+<!-- TOP NAVIGATION BAR -->
+
+<nav role="top" id="topmenu">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#SHOP">Shop</a></li>
+    <li><a href="#ABOUT">About</a></li>
+    <li><a href="#CONTACT">Contact</a></li>
+  </ul>
+</nav>
+
+<p><br></p>
+<!-- SCROLLING SIDE NAV BAR CONTENT -->
+
+<nav role="side">
+	<ul>
+		<li><a href="#HOME">HOME</a><a class="circle" href="#HOME"></a></li>
+		<li><a href="#SHOP" id="shoplink" style="visibility: visible;">SHOP</a><a class="circle" href="#SHOP" onclick="document.getElementById('shoplink').style.visibility='visible'" onmouseover="document.getElementById('shoplink').style.visibility='visible'" onmouseout="document.getElementById('shoplink').style.visibility='visible'"></a></li>
+		<li><a href="#ABOUT" id="aboutlink" style="visibility: visible;">ABOUT</a><a class="circle" href="#ABOUT" onclick="document.getElementById('aboutlink').style.visibility='visible'" onmouseover="document.getElementById('aboutlink').style.visibility='visible'" onmouseout="document.getElementById('aboutlink').style.visibility='visible'"></a></li>
+		<li><a href="#CONTACT" id="contactlink" style="visibility: visible;">CONTACT</a><a class="circle" href="#CONTACT" onclick="document.getElementById('contactlink').style.visibility='visible'" onmouseover="document.getElementById('contactlink').style.visibility='visible'" onmouseout="document.getElementById('contactlink').style.visibility='visible'"></a>
+		</li>
+	</ul>
+</nav>
+
+<!-- KAY IN LA LOGO -->
+
+<div class="image" id="HOME">
+<img src="KayInLA_Background.jpg" alt= "KayInLA" width="100%" height="600px">
+	<div class="bloc_logo" align="center">
+		<div class="text_logo" align="center">
+			<img src="KayInLA.PNG" alt= "KayInLA" width="55%">
+			<hr>
+			<h3 style="color: #C9B269; font-family: 'Open Sans Condensed', sans-serif; letter-spacing: 12px; line-height: 8px;"><br>LIVING MY DREAMS</h3>
+		</div>
+	</div>
+</div>
+
+<!-- SHOP -->
+
+<div class="pag" id="SHOP"> <!-- style="background-color: powderblue;"-->
+<h1 style="text-align: center;">SHOP</h1><br>
+
+<div style=" margin: 0 50px 10px 50px; overflow: hidden;">
+	<div class="store_img" style="margin-top: 0;">
+        <img src="KayInLA_square.PNG" alt="$50 Donation" width=100% height="300px">
+        <div class="desc"><a href="#">$50 Donation</a><br>$50.00</div>
+    </div>
+    <div class="store_img" style="margin-top: 0;">
+        <img src="KayInLA_square.PNG" alt="$20 Donation" width="100%" height="300px">
+        <div class="desc"><a href="#">$20 Donation</a><br>$20.00</div>
+    </div>
+    <div class="store_img" style="margin-top: 0;">
+        <img src="KayInLA_square.PNG" alt="$10 Donation" width="100%" height="300px">
+        <div class="desc"><a href="#">$10 Donation</a><br>$10.00</div>
+    </div>
+    <div class="store_img">
+        <img src="KayInLA_square.PNG" alt="$5 Donation" width=100% height="300px">
+        <div class="desc"><a href="#">$5 Donation</a><br>$5.00</div>
+    </div>
+    <div class="store_img">
+        <img src="waterfalljacket.png" alt="beige waterfall jacket" width=100% height="300px">
+        <div class="desc"><a href="#">Rock & Republic Waterfall Jacket</a><br>$15.00</div>
+    </div>
+    <div class="store_img">
+        <img src="MKshirt_1.png" alt="Michael Kohrs black shirt" width=100% height="300px" onmouseover="this.src='MKshirt_2.png';" onmouseout="this.src='MKshirt_1.png';">
+        <div class="desc"><a href="#">Michael Kors Faux Leather Shirt</a><br>$15.00</div>
+    </div>
+    <div class="store_img">
+        <img src="harveskirt.jpg" alt="Harvé Bernard black skirt" width="100%" height="300px">
+        <div class="desc"><a href="#">Harvé Bernard Skirt</a><br>$20.00</div>
+    </div>
+    <div class="store_img">
+        <img src="grayskirt.png" alt="Calvin Klein gray skirt" width="100%" height="300px">
+        <div class="desc"><a href="#">Calvin Klein Skirt</a><br>$20.00</div>
+    </div>
+    <div class="store_img">
+        <img src="satinblackskirt1.png" alt="Charlotte Russe black skirt" width="100%" height="300px" onmouseover="this.src='satinblackskirt2.png';" onmouseout="this.src='satinblackskirt1.png';">
+        <div class="desc"><a href="#">Charlotte Russe Skirt</a><br>$15.00</div>
+    </div>
+</div>
+
+    <div align="center"; style="clear: both;">
+    	<button type="button" style="background-color: white; color: #B30E37; width: 20%;  font-family: 'Source Sans Pro', sans-serif;font-size: 16px; border-radius: 0; border: 1px solid #C9B269;padding: 10px;"onclick="alert('More Products Coming Soon!')">LOAD MORE</button>
+    </div>
+
+</div>
+
+<!-- ABOUT KAY IN LA -->
+
+<div class="image" id="ABOUT">
+<img src="KayInLA_Background.jpg" alt= "KayInLA" width="100%">
+	<div><h1 style="color: white; text-align: center; top: 10%; left: 43.5%; position: absolute;">ABOUT</h1></div>
+	<div class="bloc_about" align="center">
+		<div class="text_about" align="center">
+			<p>Hey loves! I recently started using #KayInLA to document my journey to LA via social media. I'm planning to move to LA to pursue a career as a professional dancer and moving to LA is the first step in my journey. My dream is to dance on tour with a major recording artist, and I'm excited for the journey ahead. I've been saving my own money to move to LA, but I've been looking for additional ways to save money. One day, I came across a bunch of clothes I've barely worn that I wanted to get rid of and thought, "Why not sell them as another way to save money?" Sooo… I created an online store to make things easy and convenient. If you would like to support my dreams, purchase something for yourself or a loved one. If you prefer not to purchase an item, but would still like to support you can purchase the donation item with your desired amount. ALL of the proceeds will go toward my move to LA. Thank you in advance to anyone who makes a purchase. Your support means the world to me!</p>
+		</div>
+	</div>
+</div>
+
+<!-- CONTACT ME -->
+
+<div class="pag" id="CONTACT">
+<h1 style="text-align: center;">CONTACT ME</h1>
+<br>
+<p style="text-align: center;"><strong>To contact me, please fill out the form below. I look forward to hearing from you! ❤️</strong></p>
+
+<div style="margin: 0 auto; width: 80%;">
+	<div style="float: left; padding: 20px;">
+		<form action="send.php" method="post">
+  		First Name <span class="note">(required)</span><br>
+  		<input type="text" name="first_name"><br><br>
+  		Last Name <span class="note">(required)</span><br>
+  		<input type="text" name="last_name"><br><br>
+  		Email <span class="note">(required)</span><br>
+  		<input type="text" name="email"></form>
+  	</div>
+  	<div style="float: left; padding: 20px;">
+  		<form action="send.php" method="post">
+  		Message <span class="note">(required)</span><br>
+  		<textarea rows="8" name="message" cols="70"></textarea><br>
+  		<input type="submit" name="Send" value="SUBMIT" align="right" style="background-color: #B30E37; color: white; width: 80px; height: 40px; font-family: 'Source Sans Pro', sans-serif; border-radius: 5px; border: 1px solid #B30E37; font-weight: bold;">
+		</form>
+	</div>
+</div>
+</div>
+
+<!-- CLOSE CONTAINER -->
+
+</div>
+
+<!-- FOOTER WITH INSTAGRAM FEED -->
+
+<footer><a href="#"><p><strong>&uarr;</strong></p></a> <a href="#">Top</a> <br><br> &copy; 2016 by #KayInLA. Supporting Kay's dream of moving to LA.
+<!-- <script type="text/javascript" src="instafeed.min.js">
+    var feed = new Instafeed({
+        get: 'user',
+        userId: '212387108',
+        clientId: 'HAVE TO REQUEST THIS'
+    });
+    feed.run();
+</script>-->
+</footer>
+
+
+</body>
+</html>
