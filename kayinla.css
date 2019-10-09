@@ -202,9 +202,6 @@ nav[role="top"] ul li a {
 nav[role="top"] ul li a:hover {
 	color: #B30E37;
 }
-/*nav[role="top"] ul li a:active {
-	color: #B30E37;
-}*/
 
 /*Side Navigation Bar Elements*/
 nav[role="side"] {
@@ -241,41 +238,36 @@ nav[role="side"] ul li a {
     text-decoration: none;
     border: 0;
 }
-
 nav[role="side"] ul li a:hover {
     color: #B30E37;
 }
-/* // .active {
-// 	background-color: powderblue;
-// 	visibility: visible;
-// }
-// .active a {
-// 	background-color: powderblue;
-// 	visibility: visible;
-// }
-// a.active {
-// 	background-color: powderblue;
-// 	visibility: visible;
-// } */
 nav[role="side"] ul li a.active {
-  background-color: powderblue;
-  visibility: visible;
+    color: #B30E37;
 }
 nav[role="side"] ul li a.circle {
-    /*display: inline-block;*/
-  background-color: transparent;
-	color: #B30E37;
-	border-radius: 50%;
-	border: 1px solid #C9B269;
-	margin-left: 10px;
-	padding: 5px;
-	display: inline-block;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 12px;
+    background-color: transparent;
+  	border-radius: 50%;
+  	border: 1px solid #C9B269;
+  	margin-left: 10px;
+  	padding: 5px;
+  	display: inline-block;
+  	font-family: 'Source Sans Pro', sans-serif;
+	  font-size: 12px;
 }
 nav[role="side"] ul li a.circle:hover {
-    text-decoration: none;
-    background-color: #C9B269;
+    border-radius: 50%;
+    border: 1px solid #B30E37;
+    background-color: #B30E37;
+}
+nav[role="side"] ul li a.circle_active {
+  background-color: #B30E37;
+  border-radius: 50%;
+  border: 1px solid #B30E37;
+  margin-left: 10px;
+  padding: 5px;
+  display: inline-block;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
 }
 
 /*Form Elements*/

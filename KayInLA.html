@@ -10,34 +10,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
-$('nav[role="side"] ul li a').click(function() {
-	$('li').removeClass();
-	$(this).parent().addClass('active');
-});
 
+/* Highlights the current page while scrolling */
+	$(window).scroll(function() {
+	    var position = $(this).scrollTop();
 
-	// $(document).ready(function(){
-  //     $('nav[role="side"] ul li a').on('click', function(event) {
-  //         $(this).parentsUntil('nav[role="side"]').find('a').removeClass('active');
-  //         $(this).addClass('active');
-          // $(document).on("scroll", onScroll);
-      // });
+	    $('.pag, .image').each(function() {
+	        var target = $(this).offset().top;
+	        var id = $(this).attr('id');
 
-  //       function onScroll(event){
-		// 	var scrollPosition = $(document).scrollTop();
-  //   		$('nav[role="side"] ul li a').each(function () {
-  //     		var currentLink = $(this);
-  //     		var refElement = $(currentLink.attr("href"));
-  //     		if (refElement.position().top <= scrollPosition
-  //         && refElement.position().top + refElement.height() > scrollPosition) {
-  //       	$('nav[role="side"] ul li a').removeClass("active");
-  //       	currentLink.addClass("active");
-  //     		}
-  //     	else{
-  //       	currentLink.removeClass("active");
-  //     	}
-  //   	});
-		// }
+					if (position >= target - 100) {
+						$('a').removeClass('active');
+			 		 	$('a.circle').removeClass('circle_active');
+			    	$("[href=\\#"+id+"]").addClass('active');
+			 		 	$("a.circle[href=\\#"+id+"]").addClass('circle_active');
+	        }
+	    });
+	});
 </script>
 </head>
 <body style="background-color:white; margin: 0;">
@@ -61,10 +50,10 @@ $('nav[role="side"] ul li a').click(function() {
 
 <nav role="side">
 	<ul>
-		<li><a href="#HOME">HOME</a><a class="circle" href="#HOME"></a></li>
-		<li><a href="#SHOP" id="shoplink" style="visibility: visible;">SHOP</a><a class="circle" href="#SHOP" onclick="document.getElementById('shoplink').style.visibility='visible'" onmouseover="document.getElementById('shoplink').style.visibility='visible'" onmouseout="document.getElementById('shoplink').style.visibility='visible'"></a></li>
-		<li><a href="#ABOUT" id="aboutlink" style="visibility: visible;">ABOUT</a><a class="circle" href="#ABOUT" onclick="document.getElementById('aboutlink').style.visibility='visible'" onmouseover="document.getElementById('aboutlink').style.visibility='visible'" onmouseout="document.getElementById('aboutlink').style.visibility='visible'"></a></li>
-		<li><a href="#CONTACT" id="contactlink" style="visibility: visible;">CONTACT</a><a class="circle" href="#CONTACT" onclick="document.getElementById('contactlink').style.visibility='visible'" onmouseover="document.getElementById('contactlink').style.visibility='visible'" onmouseout="document.getElementById('contactlink').style.visibility='visible'"></a>
+		<li><a href="#HOME" id="homelink" class="active">HOME</a><a class="circle circle_active" href="#HOME"></a></li>
+		<li><a href="#SHOP" id="shoplink">SHOP</a><a class="circle" href="#SHOP"></a></li>
+		<li><a href="#ABOUT" id="aboutlink">ABOUT</a><a class="circle" href="#ABOUT"></a></li>
+		<li><a href="#CONTACT" id="contactlink">CONTACT</a><a class="circle" href="#CONTACT"></a>
 		</li>
 	</ul>
 </nav>
