@@ -30,7 +30,8 @@ div.widge {
     padding: 0;
     border-top: 1px solid rgb(200,200,200);
     margin: 0;
-    clear: both;
+    float: left;
+    position: relative;
 }
 div.image {
     display: block;
