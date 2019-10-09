@@ -1,0 +1,345 @@
+/*
+Theme Name: KayInLA
+Theme URI: http://kayinla87.com
+Author: Kay Coleman
+Author URI:http://kayinla87.com
+Description: The theme to accompany the wptutsplus series on creating a WordPress theme from static HTML.
+Version: 3.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/*Specialized Divs*/
+div.container {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+div.pag {
+	background-color: white;
+    color:#C9B269;
+    padding: 20px;
+    overflow: hidden;
+}
+div.image {
+	display: block;
+	position: relative;
+	margin-top: 10px;
+}
+div.bloc_logo {
+	background-color: white;
+	width: 44%;
+	height: auto;
+	padding: 10px;
+	margin: 20px;
+	overflow: hidden;
+	top: 24%;
+	left: 24%;
+	position: absolute;
+}
+div.text_logo {
+	border: 1px solid #C9B269;
+	width: 92%;
+	height: auto;
+	padding: 20px;
+	margin: 0;
+}
+div.bloc_about {
+	background-color: white;
+	width: 70%;
+	height: auto;
+	padding: 10px 10px 10px 10px;
+	margin: 20px;
+	overflow: hidden;
+	top: 25%;
+	left: 10%;
+	position: absolute;
+}
+div.text_about {
+	border: 1px solid #C9B269;
+	width: 95%;
+	height: auto;
+	padding: 20px;
+	margin: 0;
+}
+div.store_img {
+    margin: 30px 48px 10px 48px;
+    float: left;
+    width: 24%;
+}
+/*div.store_img:hover {
+    border: 1px solid #777;
+}*/
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+}
+div.desc a {
+	color: #C9B269;
+}
+
+/*Headings and Fonts*/
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 10px;
+    letter-spacing: 5px;
+}
+h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 2px;
+}
+h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 2px;
+}
+h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 2px;
+}
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    line-height: 150%;
+}
+hr {
+	border-bottom: 1px solid #C9B269;
+	border-right: 0;
+	border-left: 0;
+	border-top: 0;
+	width: 70%;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+/*Links*/
+a {
+    color: #B30E37;
+    text-decoration: none;
+}
+
+/*Header and Footer*/
+header {
+    padding: 2em;
+    padding-top: 2.5em;
+    padding-bottom: 1.8em;
+    color: black;
+    background-color: white;
+    clear: left;
+    text-align: center;
+}
+footer {
+    padding: 3em;
+    color: white;
+    background-color: #B30E37;
+    clear: left;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+footer a {
+	color: white;
+}
+
+/*Top Navigation Bar Elements*/
+nav[role="top"] {
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav[role="top"] ul {
+    display: inline-block;
+    text-align: center;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+nav[role="top"] ul li {
+    float: left;
+    text-align: left;
+}
+nav[role="top"] ul li a {
+    display: inline-block;
+    color: #C9B269;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
+    padding: 15px 36px 25px 36px;
+    text-decoration: none;
+}
+nav[role="top"] ul li a:hover {
+	color: #B30E37;
+}
+/*nav[role="top"] ul li a:active {
+	color: #B30E37;
+}*/
+
+/*Side Navigation Bar Elements*/
+nav[role="side"] {
+    float: left;
+    text-align: center;
+    z-index:1;
+    position: fixed;
+    top: 24%;
+    left: 75%;
+}
+nav[role="side"] ul {
+    display: inline-block;
+    width: 210px;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+    background-color: none;
+    text-align: right;
+    list-style-position: inside;
+}
+nav[role="side"] ul li {
+    text-align: right;
+    margin: 0;
+    /*padding: 0;*/
+}
+nav[role="side"] ul li a {
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #C9B269;
+    text-align: right;
+    text-decoration: none;
+    border: 0;
+}
+
+nav[role="side"] ul li a:hover {
+    color: #B30E37;
+}
+/* // .active {
+// 	background-color: powderblue;
+// 	visibility: visible;
+// }
+// .active a {
+// 	background-color: powderblue;
+// 	visibility: visible;
+// }
+// a.active {
+// 	background-color: powderblue;
+// 	visibility: visible;
+// } */
+nav[role="side"] ul li a.active {
+  background-color: powderblue;
+  visibility: visible;
+}
+nav[role="side"] ul li a.circle {
+    /*display: inline-block;*/
+  background-color: transparent;
+	color: #B30E37;
+	border-radius: 50%;
+	border: 1px solid #C9B269;
+	margin-left: 10px;
+	padding: 5px;
+	display: inline-block;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 12px;
+}
+nav[role="side"] ul li a.circle:hover {
+    text-decoration: none;
+    background-color: #C9B269;
+}
+
+/*Form Elements*/
+form {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: inline;
+}
+input[type=text] {
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #C9B269;
+    border-radius: 0px;
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: white;
+    padding: 10px;
+}
+input[type=text]:focus {
+    outline: 1px solid #B30E37;
+}
+textarea {
+    border: 1px solid #C9B269;
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 10px;
+}
+textarea:focus {
+    outline: 1px solid #B30E37;
+}
+span.note {
+    font-size: 100%;
+    color: rgb(200,200,200);
+}
+button[type=button] {
+	background-color: transparent;
+	color: #B30E37;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 12px;
+	border-radius: 50%;
+	border: 1px solid #C9B269;
+	padding: 7px;
+	/*margin: 0;*/
+	/*display: inline;*/
+}
+button[type=button]:hover {
+	background-color: #C9B269;
+}
+button[type=button]:active {
+	background-color: #C9B269;
+}
+
+/*Table*/
+table {
+    padding: 20px;
+}
+td.par {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*Body Elements*/
+article {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 1em;
+    overflow: hidden;
+}
