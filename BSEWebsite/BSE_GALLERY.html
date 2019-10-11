@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cinzel:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=GFS+Didot" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Mukta+Vaani:200,300,400,500,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Caudex:400,400i,700,700i" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/*Specialized Divs*/
+div.container {
+    background-color: white;
+    color:rgb(65,65,65);
+    margin: 0;
+    /*margin: 30px 15px 30px 15px;*/
+    padding: 0;
+}
+
+div.widge {
+    background-color: rgb(230,230,230);
+    color:rgb(65,65,65);
+    padding: 0;
+    border-top: 1px solid rgb(200,200,200);
+    margin: 0;
+    clear: both;
+}
+div.image {
+	/*float: left;*/
+	padding: 20px 0;
+    display: block;
+    position: relative;
+}
+
+div.transbox {
+    width: 286px;
+    height: 175px;
+    opacity: 0;
+    overflow: hidden;
+    /*background-color: blue;*/
+    text-align: center;
+}
+
+div.pic {
+    width: 286px;
+    height: 175px;
+    border: 2px solid white; 
+    box-shadow: 0 0 3px #B8ADAD; 
+    object-fit: cover;
+    float: left;
+    background: url(G1.jpg) no-repeat;
+}
+
+
+div.pic:hover .transbox{
+    /*padding: 10px 10px;*/
+    opacity: 0.4;
+    vertical-align: middle;
+}
+
+div.pagelem {
+	background-color: white;
+    width: 70%;
+    height: 50%;
+    left: 13%;
+    position: relative;
+    padding: 20px 20px 20px 20px;
+    margin: 30px 0 30px 0;
+    overflow: auto;
+}
+
+/*Headings and Fonts*/
+h1 {
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 10px;
+    letter-spacing: 2px;
+}
+h2 {
+    font-family: 'Caudex', serif;
+    font-size: 25px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 2px;
+}
+h3 {
+    font-family: 'Caudex', serif;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 2px;
+    color: #CCAF6D;
+}
+h4 {
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 2px;
+}
+p  {
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 200;
+    line-height: 16px;
+    /*line-height: 150%;*/
+    color: rgb(70,70,70);
+}
+
+span.cursive {
+    font-family: 'Cookie', cursive;
+    font-size: 70px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    line-height: 14px;
+    /*line-height: 150%;*/
+    color: #F3B07A;
+}
+
+span.script {
+    font-family: 'GFS Didot', serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 14px;
+    /*line-height: 150%;*/
+    color: #666666;
+}
+
+hr.med {
+    border: none;
+    height: 2px;
+    color: #CCAF6D;
+    background-color: #CCAF6D;
+}
+
+/*Header and Footer*/
+header {
+    padding: 2em;
+    padding-top: 0;
+    padding-bottom: 1.8em;
+    color: black;
+    background-color: white;
+    clear: left;
+    text-align: center;
+    margin-top: 0;
+}
+footer {
+    padding: 10px;
+    margin-top: 10px;
+    color: rgb(70,70,70);
+    background-color: white;
+    clear: both;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+/*Top Navigation Bar*/
+nav {
+    width: 100%;
+    float: left;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    text-align: center;
+}
+nav ul {
+    display: inline-block;
+    text-align: center;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+nav ul li {
+    float: left;
+    text-align: center;
+}
+
+nav ul li:first-child:before { 
+    content: " \2501 \2501 \2501 \2501"; 
+    color: rgb(70,70,70);
+}
+nav ul li:last-child:after { 
+    content: " \2501 \2501 \2501 \2501"; 
+    color: rgb(70,70,70);
+}
+nav ul li a {
+    display: inline-block;
+    color: rgb(70,70,70);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    padding: 40px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+	color: #CCAF6D;
+}
+nav ul li a.current {
+    color: #CCAF6D;
+}
+
+/*Links*/
+a {
+    color: rgb(70,70,70);
+    text-decoration: none;
+}
+
+/*Buttons*/
+button[type=button] {
+    background-color: #CCAF6D;
+    color: white; 
+    font-family: 'Playfair Display', serif;
+    font-size: 16px; 
+    font-weight: 700;
+    box-shadow:none;
+    border-radius: 0; 
+    border: 0;
+    padding: 10px 40px;
+    /*margin: 0;*/
+    /*display: inline;*/
+}
+button[type=button]:hover {
+    background-color: white;
+    color: #CCAF6D;
+}
+
+/*Table*/
+table {
+    padding: 20px;
+}
+td.par {
+    padding: 0 20px;
+}
+
+/*Body Elements*/
+article {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 1em;
+    overflow: hidden;
+}
+</style> 
+</head>
+<body style="background-color:white;"> 
+
+<div class="container">
+
+<header>
+   <a href="BSE_HOME.html"><img src="BSE_LOGO.png" alt= "BSE_LOGO" width="60%"></a>
+</header>
+
+<!-- TOP NAVIGATION BAR -->
+
+<nav>
+ <div style="align-items:center;background-color: white;">
+  <ul>
+    <li><a href="BSE_HOME.html">HOME</a></li>
+    <li><a href="BSE_MEET.html">MEET</a></li>
+    <li><a href="BSE_SERVICES.html">SERVICES</a></li>
+    <li><a class="current" href="BSE_GALLERY.html">GALLERY</a></li>
+    <li><a href="BSE_LOVE.html">BSE LOVE</a></li>
+    <li><a href="BSE_CONTACT.html">CONTACT</a></li>
+    <!-- <li><a href="#">BLOG</a></li> -->
+  </ul>
+ </div>
+</nav>
+
+<p><br></p>
+
+<div class="image" align="center">
+<img src="G1.jpg" alt= "Copper1" width="286" height="175" style=" margin: 10px 10px 10px 0; border: 2px solid white; box-shadow: 0 0 3px #B8ADAD; object-fit: cover;">
+<!-- <div class="pic">
+    <div class="transbox"><h4 style="color: black;">Jodie Brim Photography</h4><p style="color: black;">Copper & Rose Gold Glam Styled Shoot</p></div>
+</div> -->
+<img src="G2.jpg" alt= "Copper2" width="286" height="175" style="margin: 10px 10px 10px 0; border: 2px solid white; box-shadow: 0 0 3px #B8ADAD; object-fit: cover;">
+<img src="G3.jpg" alt= "Copper3" width="286" height="175" style="margin: 10px 0; border: 2px solid white; box-shadow: 0 0 3px #B8ADAD; object-fit: cover;"><br>
+<img src="G4.jpg" alt= "Copper4" width="286" height="175" style=" margin: 0 10px 0 0; border: 2px solid white; box-shadow: 0 0 3px #B8ADAD; object-fit: cover;">
+<img src="G5.jpg" alt= "Copper5" width="286" height="175" style="margin: 0 10px 0 0; border: 2px solid white; box-shadow: 0 0 3px #B8ADAD; object-fit: cover;">
+<img src="G6.jpg" alt= "Copper6" width="286" height="175" style="margin: 0 0; border: 2px solid white; box-shadow: 0 0 3px #B8ADAD; object-fit: cover;"><br>
+<img src="G7.jpg" alt= "Copper7" width="286" height="175" style=" margin: 10px 10px 10px 0; border: 2px solid white; box-shadow: 0 0 3px #B8ADAD; object-fit: cover;">
+<img src="G8.jpg" alt= "Copper8" width="286" height="175" style="margin: 10px 10px 10px 0; border: 2px solid white; box-shadow: 0 0 3px #B8ADAD; object-fit: cover;">
+<img src="G9.jpg" alt= "Copper9" width="286" height="175" style="margin: 10px 0; border: 2px solid white; box-shadow: 0 0 3px #B8ADAD; object-fit: cover;">
+</div>
+
+
+<!-- FOOTER -->
+
+<footer> B. STILL EVENTS | NORTH CAROLINA AND BEYOND | <a href="BSE_CONTACT.html"> BRIDGETTE@BSTILLEVENTS.COM</a> | 336.638.1161 <br><br>
+<div class="image" align="center">
+    <a href="https://www.facebook.com/bstillevents/"><img src="facebook.png" alt= "facebook" width="25" height="25" style="padding: 0 10px;"></a>
+    <a href="https://twitter.com/bstillevents"><img src="twitter.png" alt= "twitter" width="25" height="25" style="padding: 0 10px;"></a>
+    <a href="https://www.instagram.com/bstillevents/"><img src="instagram.png" alt= "instagram" width="25" height="25" style="padding: 0 10px;"></a>
+    <a href="https://www.pinterest.com/bstillevents/"><img src="pinterest.png" alt= "pinterest" width="25" height="25" style="padding: 0 10px;"></a>
+</div>
+</footer>
+
+</div>
+</body>
+</html>
