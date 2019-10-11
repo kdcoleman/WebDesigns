@@ -1,0 +1,227 @@
+/* Stylesheet for BSE Website
+Author: Kayla Coleman
+*/
+
+/*Specialized Divs*/
+div.container {
+    background-color: white;
+    color:rgb(65,65,65);
+    margin: 0;
+    /*margin: 30px 15px 30px 15px;*/
+    padding: 0;
+}
+
+div.widge {
+    background-color: rgb(230,230,230);
+    color:rgb(65,65,65);
+    padding: 0;
+    border-top: 1px solid rgb(200,200,200);
+    margin: 0;
+    clear: both;
+}
+div.image {
+	/*float: left;*/
+	padding: 20px;
+    display: block;
+    position: relative;
+}
+div.transbox {
+    background-color: white;
+    width: 60%;
+    height: 60%;
+    opacity: 0.94;
+    top: 25%;
+    left: 26%;
+    position: absolute;
+    padding: 2em 1.5em 1.5em 1.5em;
+    margin: 20px;
+    overflow: hidden;
+}
+
+div.pagelem {
+	background-color: white;
+    width: 70%;
+    height: 50%;
+    left: 13%;
+    position: relative;
+    padding: 20px 20px 20px 20px;
+    margin: 30px 0 30px 0;
+    overflow: auto;
+}
+
+/*Headings and Fonts*/
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 10px;
+    letter-spacing: 2px;
+}
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 2px;
+}
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 2px;
+}
+h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 2px;
+}
+p  {
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 200;
+    line-height: 20px;
+    line-height: 150%;
+    color: rgb(70,70,70);
+}
+
+span.cursive {
+    font-family: 'Cookie', cursive;
+    font-size: 70px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    line-height: 14px;
+    /*line-height: 150%;*/
+    color: #F3B07A;
+}
+
+span.script {
+    font-family: 'GFS Didot', serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 14px;
+    /*line-height: 150%;*/
+    color: #666666;
+}
+
+/*Header and Footer*/
+header {
+    padding: 2em;
+    padding-top: 0;
+    padding-bottom: 1.8em;
+    color: black;
+    background-color: white;
+    clear: left;
+    text-align: center;
+    margin-top: 0;
+}
+footer {
+    padding: 10px;
+    margin-top: 10px;
+    color: rgb(70,70,70);
+    background-color: white;
+    clear: both;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+/*Top Navigation Bar*/
+nav {
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    float: left;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    text-align: center;
+}
+nav ul {
+    display: inline-block;
+    text-align: center;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+nav ul li {
+    float: left;
+    text-align: center;
+}
+
+nav ul li:first-child:before {
+    content: " \2501 \2501 \2501 \2501";
+    color: rgb(70,70,70);
+}
+nav ul li:last-child:after {
+    content: " \2501 \2501 \2501 \2501";
+    color: rgb(70,70,70);
+}
+nav ul li a {
+    display: inline-block;
+    color: rgb(70,70,70);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    padding: 40px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+	color: #CCAF6D;
+}
+nav ul li a.current {
+    color: #CCAF6D;
+}
+
+/*Links*/
+a {
+    color: rgb(70,70,70);
+    text-decoration: none;
+}
+
+/*Lines*/
+hr.med {
+    border: none;
+    height: 2px;
+    color: #B8ADAD;
+    background-color: #B8ADAD;
+}
+
+/*Table*/
+table {
+    padding: 20px;
+}
+td.par {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*Body Elements*/
+article {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 1em;
+    overflow: hidden;
+}
