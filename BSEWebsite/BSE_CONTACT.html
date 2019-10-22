@@ -9,272 +9,21 @@
 <link href="https://fonts.googleapis.com/css?family=GFS+Didot" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Mukta+Vaani:200,300,400,500,600" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Caudex:400,400i,700,700i" rel="stylesheet">
+<link href="bse.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-/*Specialized Divs*/
-div.container {
-    background-color: white;
-    color:rgb(65,65,65);
-    margin: 0;
-    /*margin: 30px 15px 30px 15px;*/
-    padding: 0;
-}
 
-div.widge {
-    background-color: rgb(230,230,230);
-    color:rgb(65,65,65);
-    padding: 0;
-    border-top: 1px solid rgb(200,200,200);
-    margin: 0;
-    clear: both;
-}
-div.image {
-	/*float: left;*/
-	padding: 20px;
-    display: block;
-    position: relative;
-}
-div.transbox {
-    background-color: white;
-    width: 60%;
-    height: 60%;
-    opacity: 0.94;
-    top: 25%;
-    left: 26%;
-    position: absolute;
-    padding: 2em 1.5em 1.5em 1.5em;
-    margin: 20px;
-    overflow: hidden;
-}
-
-div.pagelem {
-	background-color: white;
-    width: 70%;
-    height: 50%;
-    left: 13%;
-    position: relative;
-    padding: 20px 20px;
-    margin: 30px 0 30px 0;
-    overflow: auto;
-}
-
-/*Headings and Fonts*/
-h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 36px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 10px;
-    letter-spacing: 2px;
-}
-h2 {
-    font-family: 'Caudex', serif;
-    font-size: 25px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 2px;
-}
-h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 15px;
-    letter-spacing: 2px;
-}
-h4 {
-    font-family: 'Playfair Display', serif;
-    font-size: 13px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 15px;
-    letter-spacing: 2px;
-}
-p  {
-    font-family: 'Mukta Vaani', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 200;
-    line-height: 20px;
-    line-height: 150%;
-    color: rgb(70,70,70);
-}
-
-span.cursive {
-    font-family: 'Cookie', cursive;
-    font-size: 70px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 300;
-    line-height: 14px;
-    /*line-height: 150%;*/
-    color: #F3B07A;
-}
-
-span.script {
-    font-family: 'GFS Didot', serif;
-    font-size: 24px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 14px;
-    /*line-height: 150%;*/
-    color: #666666;
-}
-
-/*Header and Footer*/
-header {
-    padding: 2em;
-    padding-top: 0;
-    padding-bottom: 1.8em;
-    color: black;
-    background-color: white;
-    clear: left;
-    text-align: center;
-    margin-top: 0;
-}
-footer {
-    padding: 10px;
-    margin-top: 10px;
-    color: rgb(70,70,70);
-    background-color: white;
-    clear: both;
-    text-align: center;
-    font-family: 'Cinzel', serif;
-    font-size: 14px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    letter-spacing: 2px;
-}
-
-/*Top Navigation Bar*/
-nav {
-    width: 100%;
-    float: left;
-    margin: 0;
-    margin-bottom: 10px;
-    padding: 0;
-    text-align: center;
-}
-nav ul {
-    display: inline-block;
-    text-align: center;
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-}
-nav ul li {
-    float: left;
-    text-align: center;
-}
-
-nav ul li:first-child:before { 
-    content: " \2501 \2501 \2501 \2501"; 
-    color: rgb(70,70,70);
-}
-nav ul li:last-child:after { 
-    content: " \2501 \2501 \2501 \2501"; 
-    color: rgb(70,70,70);
-}
-nav ul li a {
-    display: inline-block;
-    color: rgb(70,70,70);
-    font-size: 14px;
-    font-weight: 400;
-    font-family: 'Cinzel', serif;
-    text-align: center;
-    padding: 40px;
-    text-decoration: none;
-}
-nav ul li a:hover {
-	color: #CCAF6D;
-}
-nav ul li a.current {
-    color: #CCAF6D;
-}
-
-/*Links*/
-a {
-    color: rgb(70,70,70);
-    text-decoration: none;
-}
-
-/*Form*/
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-    font-family: 'Mukta Vaani', sans-serif;
-    font-size: 12px;
-    box-shadow: 2px 2px 2px #888888;
-}
-
-input[type=submit] {
-    background-color: #666666;
-    color: white;
-    padding: 7px 5px;
-    border: none;
-    box-shadow: 0 0 4px #888888;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #FF884D;
-}
-
-/*Lines*/
-hr.med {
-    border: none;
-    height: 2px;
-    color: #B8ADAD;
-    background-color: #B8ADAD;
-}
-
-/*Table*/
-table {
-    padding: 20px;
-}
-td.par {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-/*Body Elements*/
-article {
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 1em;
-    overflow: hidden;
-}
-</style> 
 </head>
-<body style="background-color:white;"> 
+<body style="background-color:white;">
 
 <div class="container">
 
 <header>
-   <a href="BSE_HOME.html"><img src="BSE_LOGO.png" alt= "BSE_LOGO" width="60%"></a>
+   <a href="BSE_HOME.html"><img src="BSEImages/BSE_LOGO.png" alt= "BSE_LOGO" width="60%"></a>
 </header>
 
 <!-- TOP NAVIGATION BAR -->
 
 <nav>
- <div style="align-items:center;background-color: white;">
   <ul>
     <li><a href="BSE_HOME.html">HOME</a></li>
     <li><a href="BSE_MEET.html">MEET</a></li>
@@ -284,7 +33,6 @@ article {
     <li><a class="current" href="BSE_CONTACT.html">CONTACT</a></li>
     <!-- <li><a href="#">BLOG</a></li> -->
   </ul>
- </div>
 </nav>
 
 
@@ -293,7 +41,7 @@ article {
 <h2 align="center">CONTACT US</h2>
 
 <div class="pagelem">
-    <img src="Contact.jpg" alt= "Contact" width="335" height="232" style="float: left; border: 2px solid white; box-shadow: 0 0 3px #B8ADAD;">
+    <img src="BSEImages/Contact.jpg" alt= "Contact" width="335" height="232" style="float: left; border: 2px solid white; box-shadow: 0 0 3px #B8ADAD;">
     <form action="/action_page.php" style="float: right; width: 48%">
     <label for="name">Name</label>
     <input type="text" id="name" name="name">
@@ -319,9 +67,9 @@ article {
   <p align="center" style="float: left; width: 335px; padding-top: 10px;">We would love to hear from you! If you have questions about our services or would like to schedule a complimentary consultation, please fill our contact form.</p>
   <br>
   <div class="pagelem" style="width: 335px; background-color: white; left: 0; padding: 20px 0;">
-    <p align="center"><img src="Email.png" alt="Email" width="24"; height="27" align="left" style="float: left; position: absolute; top: 42px; left: 50px;">EMAIL US<br>info@bstillevents.com</p>
+    <p align="center"><img src="BSEImages/Email.png" alt="Email" width="24"; height="27" align="left" style="float: left; position: absolute; top: 42px; left: 50px;">EMAIL US<br>info@bstillevents.com</p>
     <br>
-  <p align="center"><img src="Phone.png" alt="Phone" width="19"; height="26" style="float: left; position: absolute; top: 142px; left: 90px;">CALL US<br>336.638.1161</p>
+  <p align="center"><img src="BSEImages/Phone.png" alt="Phone" width="19"; height="26" style="float: left; position: absolute; top: 142px; left: 90px;">CALL US<br>336.638.1161</p>
   </div>
 </div>
 
@@ -332,10 +80,10 @@ article {
 
 <footer> B. STILL EVENTS | NORTH CAROLINA AND BEYOND | <a href="BSE_CONTACT.html"> BRIDGETTE@BSTILLEVENTS.COM</a> | 336.638.1161 <br><br>
 <div class="image" align="center">
-    <a href="https://www.facebook.com/bstillevents/"><img src="facebook.png" alt= "facebook" width="25" height="25" style="padding: 0 10px;"></a>
-    <a href="https://twitter.com/bstillevents"><img src="twitter.png" alt= "twitter" width="25" height="25" style="padding: 0 10px;"></a>
-    <a href="https://www.instagram.com/bstillevents/"><img src="instagram.png" alt= "instagram" width="25" height="25" style="padding: 0 10px;"></a>
-    <a href="https://www.pinterest.com/bstillevents/"><img src="pinterest.png" alt= "pinterest" width="25" height="25" style="padding: 0 10px;"></a>
+    <a href="https://www.facebook.com/bstillevents/"><img src="BSEImages/facebook.png" alt= "facebook" width="25" height="25" style="padding: 0 10px;"></a>
+    <a href="https://twitter.com/bstillevents"><img src="BSEImages/twitter.png" alt= "twitter" width="25" height="25" style="padding: 0 10px;"></a>
+    <a href="https://www.instagram.com/bstillevents/"><img src="BSEImages/instagram.png" alt= "instagram" width="25" height="25" style="padding: 0 10px;"></a>
+    <a href="https://www.pinterest.com/bstillevents/"><img src="BSEImages/pinterest.png" alt= "pinterest" width="25" height="25" style="padding: 0 10px;"></a>
 </div>
 </footer>
 

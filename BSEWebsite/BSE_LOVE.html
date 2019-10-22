@@ -9,261 +9,21 @@
 <link href="https://fonts.googleapis.com/css?family=GFS+Didot" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Mukta+Vaani:200,300,400,500,600" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Caudex:400,400i,700,700i" rel="stylesheet">
+<link href="bse.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-/*Specialized Divs*/
-div.container {
-    background-color: white;
-    color:rgb(65,65,65);
-    margin: 0;
-    /*margin: 30px 15px 30px 15px;*/
-    padding: 0;
-}
 
-div.widge {
-    background-color: rgb(230,230,230);
-    color:rgb(65,65,65);
-    padding: 0;
-    border-top: 1px solid rgb(200,200,200);
-    margin: 0;
-    clear: both;
-}
-div.image {
-	/*float: left;*/
-	padding: 20px;
-    display: block;
-    position: relative;
-}
-div.transbox {
-    background-color: white;
-    width: 60%;
-    height: 60%;
-    opacity: 0.94;
-    top: 25%;
-    left: 26%;
-    position: absolute;
-    padding: 2em 1.5em 1.5em 1.5em;
-    margin: 20px;
-    overflow: hidden;
-}
-
-div.pagelem {
-	background-color: white;
-    width: 70%;
-    height: 50%;
-    left: 13%;
-    position: relative;
-    padding: 20px 20px 20px 20px;
-    margin: 30px 0 30px 0;
-    overflow: auto;
-}
-
-/*Headings and Fonts*/
-h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 36px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 10px;
-    letter-spacing: 2px;
-}
-h2 {
-    font-family: 'Caudex', serif;
-    font-size: 25px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 2px;
-}
-h3 {
-    font-family: 'Caudex', serif;
-    font-size: 18px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 15px;
-    letter-spacing: 2px;
-    color: #CCAF6D;
-}
-h4 {
-    font-family: 'Playfair Display', serif;
-    font-size: 13px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 15px;
-    letter-spacing: 2px;
-}
-p  {
-    font-family: 'Mukta Vaani', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 200;
-    line-height: 20px;
-    line-height: 150%;
-    color: rgb(70,70,70);
-}
-
-span.cursive {
-    font-family: 'Cookie', cursive;
-    font-size: 70px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 300;
-    line-height: 14px;
-    /*line-height: 150%;*/
-    color: #F3B07A;
-}
-
-span.script {
-    font-family: 'GFS Didot', serif;
-    font-size: 24px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 14px;
-    /*line-height: 150%;*/
-    color: #666666;
-}
-
-hr.med {
-    border: none;
-    height: 2px;
-    color: #CCAF6D;
-    background-color: #CCAF6D;
-}
-
-/*Header and Footer*/
-header {
-    padding: 2em;
-    padding-top: 0;
-    padding-bottom: 1.8em;
-    color: black;
-    background-color: white;
-    clear: left;
-    text-align: center;
-    margin-top: 0;
-}
-footer {
-    padding: 10px;
-    margin-top: 10px;
-    color: rgb(70,70,70);
-    background-color: white;
-    clear: both;
-    text-align: center;
-    font-family: 'Cinzel', serif;
-    font-size: 14px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    letter-spacing: 2px;
-}
-
-/*Top Navigation Bar*/
-nav {
-    width: 100%;
-    float: left;
-    margin: 0;
-    margin-bottom: 10px;
-    padding: 0;
-    text-align: center;
-}
-nav ul {
-    display: inline-block;
-    text-align: center;
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-}
-nav ul li {
-    float: left;
-    text-align: center;
-}
-
-nav ul li:first-child:before { 
-    content: " \2501 \2501 \2501 \2501"; 
-    color: rgb(70,70,70);
-}
-nav ul li:last-child:after { 
-    content: " \2501 \2501 \2501 \2501"; 
-    color: rgb(70,70,70);
-}
-nav ul li a {
-    display: inline-block;
-    color: rgb(70,70,70);
-    font-size: 14px;
-    font-weight: 400;
-    font-family: 'Cinzel', serif;
-    text-align: center;
-    padding: 40px;
-    text-decoration: none;
-}
-nav ul li a:hover {
-	color: #CCAF6D;
-}
-nav ul li a.current {
-    color: #CCAF6D;
-}
-
-/*Links*/
-a {
-    color: rgb(70,70,70);
-    text-decoration: none;
-}
-
-/*Buttons*/
-button[type=button] {
-    background-color: #CCAF6D;
-    color: white; 
-    font-family: 'Playfair Display', serif;
-    font-size: 16px; 
-    font-weight: 700;
-    box-shadow:none;
-    border-radius: 0; 
-    border: 0;
-    padding: 10px 40px;
-    /*margin: 0;*/
-    /*display: inline;*/
-}
-button[type=button]:hover {
-    background-color: white;
-    color: #CCAF6D;
-}
-
-/*Table*/
-table {
-    padding: 20px;
-}
-td.par {
-    padding: 0 20px;
-}
-
-/*Body Elements*/
-article {
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 1em;
-    overflow: hidden;
-}
-</style> 
 </head>
-<body style="background-color:white;"> 
+<body style="background-color:white;">
 
 <div class="container">
 
 <header>
-   <a href="BSE_HOME.html"><img src="BSE_LOGO.png" alt= "BSE_LOGO" width="60%"></a>
+   <a href="BSE_HOME.html"><img src="BSEImages/BSE_LOGO.png" alt= "BSE_LOGO" width="60%"></a>
 </header>
 
 <!-- TOP NAVIGATION BAR -->
 
 <nav>
- <div style="align-items:center;background-color: white;">
   <ul>
     <li><a href="BSE_HOME.html">HOME</a></li>
     <li><a href="BSE_MEET.html">MEET</a></li>
@@ -273,14 +33,13 @@ article {
     <li><a href="BSE_CONTACT.html">CONTACT</a></li>
     <!-- <li><a href="#">BLOG</a></li> -->
   </ul>
- </div>
 </nav>
 
 
 <p><br></p>
 
 <div class="pagelem">
-<p><img src="A&C.jpg" alt= "AmiraCole" width="155" height="187" style="float: left; margin-right: 50px; box-shadow: 7px 7px #CCAF6D;">"I would like to start off by saying, Bridgette is a true life saver. When we booked our venue we were told we would have a coordinator to help with everything, so I thought we would be fine. That was not the case. Three weeks prior to my wedding, we had to part ways with our original decorator. We contacted Bridgette who explained what services she could provide. She made sure we had all of the flowers for the bridal party, in addition to decorations for the reception area, candy buffet, and our sweetheart table. The venue coordinator's services didn't come close to the services that Bridgette provided for my husband and I. Her wonderful spirit made everything less stressful. Thanks to Bridgette my wedding was everything I dreamed of and so much more!!!"</p><br>
+<p><img src="BSEImages/A_C.jpg" alt= "AmiraCole" width="155" height="187" style="float: left; margin-right: 50px; box-shadow: 7px 7px #CCAF6D;">"I would like to start off by saying, Bridgette is a true life saver. When we booked our venue we were told we would have a coordinator to help with everything, so I thought we would be fine. That was not the case. Three weeks prior to my wedding, we had to part ways with our original decorator. We contacted Bridgette who explained what services she could provide. She made sure we had all of the flowers for the bridal party, in addition to decorations for the reception area, candy buffet, and our sweetheart table. The venue coordinator's services didn't come close to the services that Bridgette provided for my husband and I. Her wonderful spirit made everything less stressful. Thanks to Bridgette my wedding was everything I dreamed of and so much more!!!"</p><br>
 <p align="right"><span style="text-align: right; font-size: 18px;">~Amira & Cole</span></p>
 </div>
 
@@ -294,21 +53,21 @@ article {
 <hr class="med" width="75%">
 
 <div class="pagelem">
-<p><img src="A&T.jpg" alt= "AneeshaTerrell" width="155" height="187" style="float: left; margin-right: 50px; box-shadow: 7px 7px #CCAF6D;">"How could we have planned our destination wedding without Bridgette? We had already decided on the destination, dinner, cake, etc., when we realized that we really needed someone to actually coordinate everything. Bridgette ran down a checklist to be sure we hadn't overlooked anything and made suggestions on any decisions we still needed to make. It was great to have her to deal with all the little details on the big day, so that we didn't have to worry about a thing! We never could've pulled off such a perfect wedding day without Bridgette!"</p><br>
+<p><img src="BSEImages/A_T.jpg" alt= "AneeshaTerrell" width="155" height="187" style="float: left; margin-right: 50px; box-shadow: 7px 7px #CCAF6D;">"How could we have planned our destination wedding without Bridgette? We had already decided on the destination, dinner, cake, etc., when we realized that we really needed someone to actually coordinate everything. Bridgette ran down a checklist to be sure we hadn't overlooked anything and made suggestions on any decisions we still needed to make. It was great to have her to deal with all the little details on the big day, so that we didn't have to worry about a thing! We never could've pulled off such a perfect wedding day without Bridgette!"</p><br>
 <p align="right"><span style="text-align: right; font-size: 18px;">~Aneesha & Terrell</span></p>
 </div>
 
 <hr class="med" width="75%">
 
 <div class="pagelem">
-<p><img src="C&T.png" alt= "ChristaTroy" width="155" height="187" style="float: left; margin-right: 50px; box-shadow: 7px 7px #CCAF6D;">"I can't say enough of how wonderful Bridgette and her services were. There wasn't a huge amount of time to prepare for our wedding, but she stepped in and helped with everything. She offered a lot of ideas which relieved so much of the stress of planning. That meant alot to me! Our wedding was everything we wanted and more.  She took care of it all, even those very little things, so we could enjoy our wedding day. She has a great spirit which made working with her even more enjoyable. She was not only our wedding planner, but she truly became a friend!  If you want high quality service along with a great personality, I would indeed recommend her as your wedding planner!"</p><br>
+<p><img src="BSEImages/C_T.png" alt= "ChristaTroy" width="155" height="187" style="float: left; margin-right: 50px; box-shadow: 7px 7px #CCAF6D;">"I can't say enough of how wonderful Bridgette and her services were. There wasn't a huge amount of time to prepare for our wedding, but she stepped in and helped with everything. She offered a lot of ideas which relieved so much of the stress of planning. That meant alot to me! Our wedding was everything we wanted and more.  She took care of it all, even those very little things, so we could enjoy our wedding day. She has a great spirit which made working with her even more enjoyable. She was not only our wedding planner, but she truly became a friend!  If you want high quality service along with a great personality, I would indeed recommend her as your wedding planner!"</p><br>
 <p align="right"><span style="text-align: right; font-size: 18px;">~Christa & Troy</span></p>
 </div>
 
 <hr class="med" width="75%">
 
 <div class="pagelem">
-<p><img src="S&R.jpg" alt= "ShantayRalph" width="155" height="187" style="float: left; margin-right: 50px; box-shadow: 7px 7px #CCAF6D;">"Bridgette helped plan and coordinate my wedding.  My husband and I were blessed to have someone on our side who knew the ins and outs of planning a wedding! She helped to make our wedding day worry-free and ABSOLUTELY BEAUTIFUL!  It's not often you can find someone to trust with one of the most important days of your life. I thank God we found that in Bridgette!"</p><br>
+<p><img src="BSEImages/S_R.jpg" alt= "ShantayRalph" width="155" height="187" style="float: left; margin-right: 50px; box-shadow: 7px 7px #CCAF6D;">"Bridgette helped plan and coordinate my wedding.  My husband and I were blessed to have someone on our side who knew the ins and outs of planning a wedding! She helped to make our wedding day worry-free and ABSOLUTELY BEAUTIFUL!  It's not often you can find someone to trust with one of the most important days of your life. I thank God we found that in Bridgette!"</p><br>
 <p align="right"><span style="text-align: right; font-size: 18px;">~Shantay & Ralph</span></p>
 </div>
 
@@ -319,10 +78,10 @@ article {
 
 <footer> B. STILL EVENTS | NORTH CAROLINA AND BEYOND | <a href="BSE_CONTACT.html"> BRIDGETTE@BSTILLEVENTS.COM</a> | 336.638.1161 <br><br>
 <div class="image" align="center">
-    <a href="https://www.facebook.com/bstillevents/"><img src="facebook.png" alt= "facebook" width="25" height="25" style="padding: 0 10px;"></a>
-    <a href="https://twitter.com/bstillevents"><img src="twitter.png" alt= "twitter" width="25" height="25" style="padding: 0 10px;"></a>
-    <a href="https://www.instagram.com/bstillevents/"><img src="instagram.png" alt= "instagram" width="25" height="25" style="padding: 0 10px;"></a>
-    <a href="https://www.pinterest.com/bstillevents/"><img src="pinterest.png" alt= "pinterest" width="25" height="25" style="padding: 0 10px;"></a>
+    <a href="https://www.facebook.com/bstillevents/"><img src="BSEImages/facebook.png" alt= "facebook" width="25" height="25" style="padding: 0 10px;"></a>
+    <a href="https://twitter.com/bstillevents"><img src="BSEImages/twitter.png" alt= "twitter" width="25" height="25" style="padding: 0 10px;"></a>
+    <a href="https://www.instagram.com/bstillevents/"><img src="BSEImages/instagram.png" alt= "instagram" width="25" height="25" style="padding: 0 10px;"></a>
+    <a href="https://www.pinterest.com/bstillevents/"><img src="BSEImages/pinterest.png" alt= "pinterest" width="25" height="25" style="padding: 0 10px;"></a>
 </div>
 </footer>
 

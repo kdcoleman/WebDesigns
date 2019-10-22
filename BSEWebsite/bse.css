@@ -38,6 +38,22 @@ div.transbox {
     overflow: hidden;
 }
 
+div.pic {
+    width: 286px;
+    height: 175px;
+    border: 2px solid white;
+    box-shadow: 0 0 3px #B8ADAD;
+    object-fit: cover;
+    float: left;
+    background: url(G1.jpg) no-repeat;
+}
+
+div.pic:hover .transbox{
+    /*padding: 10px 10px;*/
+    opacity: 0.4;
+    vertical-align: middle;
+}
+
 div.pagelem {
 	background-color: white;
     width: 70%;
@@ -200,6 +216,19 @@ a {
     color: rgb(70,70,70);
     text-decoration: none;
 }
+a.buttlink {
+    background-color: #CCAF6D;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow:none;
+    border-radius: 0;
+    border: 0;
+    padding: 10px 40px;
+    /*margin: 0;*/
+    /*display: inline;*/
+}
 
 /*Lines*/
 hr.med {
@@ -207,6 +236,54 @@ hr.med {
     height: 2px;
     color: #B8ADAD;
     background-color: #B8ADAD;
+}
+
+/*Buttons*/
+button[type=button] {
+    background-color: #CCAF6D;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow:none;
+    border-radius: 0;
+    border: 0;
+    padding: 10px 40px;
+    /*margin: 0;*/
+    /*display: inline;*/
+}
+button[type=button]:hover {
+    background-color: white;
+    color: #CCAF6D;
+}
+
+/*Form*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 12px;
+    box-shadow: 2px 2px 2px #888888;
+}
+
+input[type=submit] {
+    background-color: #666666;
+    color: white;
+    padding: 7px 5px;
+    border: none;
+    box-shadow: 0 0 4px #888888;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #FF884D;
 }
 
 /*Table*/
