@@ -84,6 +84,12 @@ h2 {
     line-height: 26px;
     letter-spacing: 2px;
 }
+h2.script {
+  font-family: 'Cardo', serif;
+  font-style: italic;
+  font-size: 24px;
+  color: #666666;
+}
 h3 {
     font-family: 'Playfair Display', serif;
     font-size: 20px;
@@ -113,6 +119,12 @@ p  {
     color: rgb(70,70,70);
 }
 
+br.listspace {
+  display: block;
+  content: "";
+  margin-top: 10px;
+}
+
 span.cursive {
     font-family: 'Cookie', cursive;
     font-size: 70px;
@@ -122,6 +134,12 @@ span.cursive {
     line-height: 14px;
     /*line-height: 150%;*/
     color: #F3B07A;
+}
+
+span.fancy {
+  font-family: 'Pinyon Script', cursive;
+  font-size: 65px;
+  color: #CCAF6D;
 }
 
 span.script {
@@ -159,6 +177,30 @@ footer {
     font-variant: normal;
     font-weight: 400;
     letter-spacing: 2px;
+}
+
+/* Lists */
+div.pagelem ul {
+  padding-left: 30px;
+  margin-top: 0;
+  list-style-type: none;
+  text-align: left;
+  font-family: 'Mukta Vaani', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 200;
+  line-height: 140%;
+  color: rgb(70,70,70);
+}
+div.pagelem ul li {
+  list-style-position: outside;
+  text-indent: -1em;
+}
+div.pagelem ul li:before {
+  content: '\007E';
+  margin-right: 10px;
+
 }
 
 /*Top Navigation Bar*/
@@ -217,17 +259,15 @@ a {
     text-decoration: none;
 }
 a.buttlink {
-    background-color: #CCAF6D;
-    color: white;
-    font-family: 'Playfair Display', serif;
+    background-color: white;
+    color: rgb(70,70,70);
+    font-family: 'Mukta Vaani', sans-serif;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 200;
     box-shadow:none;
     border-radius: 0;
-    border: 0;
-    padding: 10px 40px;
-    /*margin: 0;*/
-    /*display: inline;*/
+    border: 1px solid #CCAF6D;
+    padding: 5px 50px;
 }
 
 /*Lines*/
