@@ -6,9 +6,9 @@ Author: Kayla Coleman
 div.container {
     background-color: white;
     color:rgb(65,65,65);
-    margin: 0;
+    margin: 0px 0px;
     /*margin: 30px 15px 30px 15px;*/
-    padding: 0;
+    padding: 0px 0px;
 }
 
 div.widge {
@@ -19,23 +19,17 @@ div.widge {
     margin: 0;
     clear: both;
 }
-div.image {
-	/*float: left;*/
-	padding: 20px;
+
+div.gallery {
+	  float: left;
+	  padding: 10px 50px 10px 50px;
     display: block;
-    position: relative;
+    /* position: relative; */
 }
-div.transbox {
-    background-color: white;
-    width: 60%;
-    height: 60%;
-    opacity: 0.94;
-    top: 25%;
-    left: 26%;
-    position: absolute;
-    padding: 2em 1.5em 1.5em 1.5em;
-    margin: 20px;
-    overflow: hidden;
+
+div.image {
+	  padding: 10px 20px 10px 20px;
+    display: block;
 }
 
 div.pic {
@@ -43,19 +37,31 @@ div.pic {
     height: 175px;
     border: 2px solid white;
     box-shadow: 0 0 3px #B8ADAD;
-    object-fit: cover;
     float: left;
-    background: url(G1.jpg) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    position: relative;
 }
 
-div.pic:hover .transbox{
-    /*padding: 10px 10px;*/
-    opacity: 0.4;
-    vertical-align: middle;
+div.photoCred {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 20%;
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+div.pic:hover .photoCred {
+  opacity: 1;
 }
 
 div.pagelem {
-	background-color: white;
+	  background-color: white;
     width: 70%;
     height: 50%;
     left: 13%;
