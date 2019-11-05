@@ -9,11 +9,27 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
+
+/*Downloaded Fonts*/
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700);
+
+/*Selectors*/
+#center {
+  text-align: center;
+}
+#topmargin {
+  margin-top: 2px;
+}
+#bold {
+  font-weight: 600;
+}
+
 /*Specialized Divs*/
 div.container {
     background-color: white;
     color:rgb(65,65,65);
-    margin: 30px 15px 30px 15px;
+    margin: 0px 25px 30px 25px;
     padding: 0;
 }
 div.pag {
@@ -39,14 +55,14 @@ div.image {
 }
 div.transbox {
     background-color: white;
-    width: 42%;
-    height: 42%;
+    width: 40%;
+    height: 40%;
     opacity: 0.94;
-    top: 25%;
-    left: 26%;
+    top: 10%;
+    left: 19%;
     position: absolute;
-    padding: 2em 1.5em 1.5em 1.5em;
-    margin: 20px;
+    padding: 1% 2%;
+    margin: 10%;
     overflow: hidden;
 }
 div.img_port_small {
@@ -118,7 +134,7 @@ h2 {
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 40px;
     letter-spacing: 2px;
 }
 h3 {
@@ -148,11 +164,28 @@ p {
     line-height: 20px;
     line-height: 150%;
 }
+p.centerlink {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  line-height: 20px;
+  line-height: 150%;
+  text-align: center;
+  clear: both;
+}
 
 /*Links*/
 a {
     color: rgb(52, 123, 124);
     text-decoration: none;
+}
+
+/*Body*/
+body {
+  background-color: black;
+  margin: 0;
 }
 
 /*Header and Footer*/
@@ -243,6 +276,10 @@ nav[role="side"] ul li {
     text-align: left;
     border-top: 1px solid rgb(230,230,230);
 }
+nav[role="side"] ul li.title {
+    text-align: center;
+    border-top: 0;
+}
 nav[role="side"] ul li a {
     display: block;
     padding-top: 15px;
@@ -272,11 +309,6 @@ input[type=text].search {
 input[type=text].search:focus {
     outline: 1px solid rgb(111, 156, 156);
 }
-
-/*Form Elements*/
-form {
-    font-family: 'Source Sans Pro', sans-serif;
-}
 input[type=text] {
     width: 300px;
     box-sizing: border-box;
@@ -289,6 +321,21 @@ input[type=text] {
 }
 input[type=text]:focus {
     outline: 1px solid rgb(111, 156, 156);
+}
+
+/*Form Elements*/
+form {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+input[type=submit].contact {
+  background-color: rgb(52, 123, 124);
+  color: white;
+  width: 80px;
+  height: 40px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid rgb(52,123,124);
 }
 textarea {
     border: 1px solid rgb(230,230,230);
@@ -307,10 +354,15 @@ span.note {
 /*Table*/
 table {
     padding: 20px;
+    width: 100%;
+}
+td {
+  text-align: center;
 }
 td.home {
     padding-left: 30px;
     padding-right: 30px;
+    text-align: left;
 }
 td.par {
     padding-top: 15px;

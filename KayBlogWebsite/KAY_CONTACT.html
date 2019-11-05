@@ -1,62 +1,60 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-<meta charset="utf-8"><!-- Need this for emojis to show -->
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700" rel="stylesheet">
-<link href="livingmydreams.css" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="utf-8"/>
+    <link href="livingmydreams.css" rel="stylesheet"/>
+  </head>
 
-<!-- THE CODE FOR THE PAGE STARTS HERE-->
-<body style="background-color:black;">
+  <!-- BODY CONTENT-->
+  <body>
+    <div class="container">
 
-<div class="container">
+      <!-- HEADER -->
+      <header>
+         <h1>KAY COLEMAN</h1>
+         <h4>LIVING MY DREAMS</h4>
+      </header>
 
-<header>
-   <h1>KAY COLEMAN</h1>
-   <h4>LIVING MY DREAMS</h4>
-</header>
+      <!-- TOP NAVIGATION BAR-->
+      <nav role="top">
+        <ul>
+          <li><a href="KAY_HOME.html">HOME</a></li>
+          <li><a href="KAY_ABOUTME.html">ABOUT ME</a></li>
+          <li><a href="KayInLA.html">#KAYINLA</a></li>
+          <li><a href="KAY_DANCINGQUEEN.html">DANCING QUEEN</a></li>
+          <li><a href="KAY_PHOTOSHOOTS.html">PHOTOSHOOTS</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="KAY_CONTACT.html">CONTACT</a></li>
+        </ul>
+      </nav>
 
-<nav role="top">
-  <ul>
-    <li><a href="KAY_HOME.html">HOME</a></li>
-    <li><a href="KAY_ABOUTME.html">ABOUT ME</a></li>
-    <li><a href="KayInLA.html">#KAYINLA</a></li>
-    <li><a href="KAY_DANCINGQUEEN.html">DANCING QUEEN</a></li>
-    <li><a href="KAY_PHOTOSHOOTS.html">PHOTOSHOOTS</a></li>
-    <li><a href="#">BLOG</a></li>
-    <li><a href="KAY_CONTACT.html">CONTACT</a></li>
-  </ul>
-</nav>
+      <img src="KayImages/KAY_CONTACT.jpg" alt= "KAY_CONTACT" width="100%">
 
-<img src="KayImages/KAY_CONTACT.jpg" alt= "KAY_CONTACT" width="100%">
+      <!-- PAGE CONTENT -->
+      <div class="pag">
+      <h2>CONTACT</h2>
 
-<!-- PAGE CONTENT -->
+      <p>To contact me for bookings, please fill out the form below. I look forward to
+        hearing from you! ❤️
+      </p>
 
-<div class="pag">
-<h2>CONTACT</h2>
-<br>
-<p>To contact me for bookings, please fill out the form below. I look forward to hearing from you! ❤️</p>
+      <form action="email.php", method="post">
+        First Name <span class="note">(required)</span><br>
+        <input type="text" name="first_name"><br><br>
+        Last Name <span class="note">(required)</span><br>
+        <input type="text" name="last_name"><br><br>
+        Email <span class="note">(required)</span><br>
+        <input type="text" name="email"><br><br>
+        Message <span class="note">(required)</span><br>
+        <textarea rows="12" name="message" cols="70"></textarea>
+        <br><br>
+        <input class="contact" type="submit" name="submit" value="SUBMIT">
+      </form>
+      </div>
 
-<form action="email.php", method="post">
-  First Name <span class="note">(required)</span><br>
-  <input type="text" name="first_name"><br><br>
-  Last Name <span class="note">(required)</span><br>
-  <input type="text" name="last_name"><br><br>
-  Email <span class="note">(required)</span><br>
-  <input type="text" name="email"><br><br>
-  Message <span class="note">(required)</span><br>
-  <textarea rows="12" name="message" cols="70"></textarea>
-  <br><br>
-  <input type="submit" name="submit" value="SUBMIT" style="background-color: rgb(52, 123, 124); color: white; width: 80px; height: 40px; font-family: 'Source Sans Pro', sans-serif; border-radius: 5px; border: 1px solid rgb(52,123,124); font-weight: bold;">
-</form>
-</div>
+      <!-- FOOTER -->
+      <footer>BLOG AT WORDPRESS.COM</footer>
 
-<!-- FOOTER -->
-
-<footer>BLOG AT WORDPRESS.COM</footer>
-
-</div>
-</body>
+    </div>
+  </body>
 </html>

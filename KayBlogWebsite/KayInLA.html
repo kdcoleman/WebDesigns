@@ -1,174 +1,202 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-<!-- <title>#KayInLA | Living My Dreams</title> -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
-<link href="kayinla.css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>
-/* Highlights the current page while scrolling */
-	$(window).scroll(function() {
-	    var position = $(this).scrollTop();
+	<head>
+		<title>#KayInLA | Online Shop Supporting Kay's Dreams</title>
+		<meta name="description" content="An online store where you can purchase items
+		of clothing from Kay's closet to support to her dream of moving to LA.">
+		<meta name="keywords" content="online shop, boutique, fundraiser, clothing store">
+		<meta charset="utf-8">
+		<link href="kayinla.css" rel="stylesheet"/>
+	</head>
 
-	    $('.pag, .image').each(function() {
-	        var target = $(this).offset().top;
-	        var id = $(this).attr('id');
+	<!-- BODY CONTENT -->
+	<body>
+		<div class="container">
 
-					if (position >= target - 100) {
-						$('a').removeClass('active');
-			 		 	$('a.circle').removeClass('circle_active');
-			    	$("[href=\\#"+id+"]").addClass('active');
-			 		 	$("a.circle[href=\\#"+id+"]").addClass('circle_active');
-	        }
-	    });
-	});
-</script>
-</head>
-<body style="background-color:white; margin: 0;">
+			<!-- TOP NAVIGATION BAR -->
+			<nav role="top">
+			  <ul>
+			    <li><a href="#">Home</a></li>
+			    <li><a href="#SHOP">Shop</a></li>
+			    <li><a href="#ABOUT">About</a></li>
+			    <li><a href="#CONTACT">Contact</a></li>
+			  </ul>
+			</nav>
 
-<div class="container" id="pagecontent">
+			<p><br></p>
 
-<!-- TOP NAVIGATION BAR -->
+			<!-- SCROLLING SIDE NAV BAR CONTENT -->
+			<nav role="side">
+				<ul>
+					<li><a href="#HOME" class="active">HOME</a><a class="circle circle_active" href="#HOME"></a></li>
+					<li><a href="#SHOP">SHOP</a><a class="circle" href="#SHOP"></a></li>
+					<li><a href="#ABOUT">ABOUT</a><a class="circle" href="#ABOUT"></a></li>
+					<li><a href="#CONTACT">CONTACT</a><a class="circle" href="#CONTACT"></a>
+					</li>
+				</ul>
+			</nav>
 
-<nav role="top" id="topmenu">
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#SHOP">Shop</a></li>
-    <li><a href="#ABOUT">About</a></li>
-    <li><a href="#CONTACT">Contact</a></li>
-  </ul>
-</nav>
+			<!-- KAY IN LA LOGO -->
+			<div class="image" id="HOME">
+				<div class="logowithtext" id="center">
+					<img src="KayInLAImages/KayInLALogo.png" alt= "KayInLALogo" width="55%">
+					<hr>
+					<br>
+					<h3>LIVING MY DREAMS</h3>
+				</div>
+			</div>
 
-<p><br></p>
+			<!-- SHOP -->
+			<div class="section" id="SHOP">
+				<h1 id="center">SHOP</h1><br>
 
-<!-- SCROLLING SIDE NAV BAR CONTENT -->
+				<div class="store_img" class="notopmargin">
+			    <img src="KayInLAImages/KayInLALogo_square.png" alt="$50 Donation" width=100% height=auto>
+			    <div class="desc">
+						<a href="#">$50 Donation</a><br>$50.00
+					</div>
+			  </div>
 
-<nav role="side">
-	<ul>
-		<li><a href="#HOME" id="homelink" class="active">HOME</a><a class="circle circle_active" href="#HOME"></a></li>
-		<li><a href="#SHOP" id="shoplink">SHOP</a><a class="circle" href="#SHOP"></a></li>
-		<li><a href="#ABOUT" id="aboutlink">ABOUT</a><a class="circle" href="#ABOUT"></a></li>
-		<li><a href="#CONTACT" id="contactlink">CONTACT</a><a class="circle" href="#CONTACT"></a>
-		</li>
-	</ul>
-</nav>
+			  <div class="store_img" class="notopmargin">
+			    <img src="KayInLAImages/KayInLALogo_square.png" alt="$20 Donation" width="100%" height=auto>
+			    <div class="desc">
+						<a href="#">$20 Donation</a><br>$20.00
+					</div>
+			  </div>
 
-<!-- KAY IN LA LOGO -->
+			  <div class="store_img" class="notopmargin">
+			    <img src="KayInLAImages/KayInLALogo_square.png" alt="$10 Donation" width="100%" height=auto>
+			    <div class="desc">
+						<a href="#">$10 Donation</a><br>$10.00
+					</div>
+			  </div>
 
-<div class="image" id="HOME">
-<img src="KayInLAImages/KayInLA_Background.jpg" alt= "KayInLA" width="100%" height="600px">
-	<div class="bloc_logo" align="center">
-		<div class="text_logo" align="center">
-			<img src="KayInLAImages/KayInLALogo.png" alt= "KayInLA" width="55%">
-			<hr>
-			<h3 style="color: #C9B269; font-family: 'Open Sans Condensed', sans-serif; letter-spacing: 12px; line-height: 8px;"><br>LIVING MY DREAMS</h3>
+		    <div class="store_img">
+		      <img src="KayInLAImages/KayInLALogo_square.png" alt="$5 Donation" width=100% height=auto>
+					<h4><br></h4>
+		      <div class="desc">
+						<a href="#">$5 Donation</a><br>$5.00
+					</div>
+		    </div>
+
+		    <div class="store_img">
+		      <img src="KayInLAImages/waterfalljacket.png" alt="beige waterfall jacket" width=100% height=350px>
+		      <div class="desc">
+						<a href="#">Rock & Republic Waterfall Jacket</a><br>$15.00
+					</div>
+		    </div>
+
+		    <div class="store_img">
+		      <img src="KayInLAImages/MKshirt1.png" alt="Michael Kors black shirt" width=100% height=350px
+						onmouseover="this.src='KayInLAImages/MKshirt2.png';"
+						onmouseout="this.src='KayInLAImages/MKshirt1.png';">
+		      <div class="desc">
+						<a href="#">Michael Kors Faux Leather Shirt</a><br>$15.00
+					</div>
+		    </div>
+
+		    <div class="store_img">
+		      <img src="KayInLAImages/denimshirt.jpg" alt="Forever 21 denim shirt" width="100%" height=350px>
+		      <div class="desc">
+						<a href="#">Forever 21 Denim Shirt</a><br>$20.00
+					</div>
+		    </div>
+
+		    <div class="store_img">
+		     <img src="KayInLAImages/grayskirt.png" alt="Calvin Klein gray skirt" width="100%" height=350px>
+		      <div class="desc">
+						<a href="#">Calvin Klein Skirt</a><br>$20.00
+					</div>
+		    </div>
+
+		    <div class="store_img">
+		      <img src="KayInLAImages/gapsweater.png" alt="GAP cowl neck sweater" width="100%" height=350px>
+		      <div class="desc">
+						<a href="#">GAP Cowl Neck Sweater</a><br>$15.00
+					</div>
+		    </div>
+
+			  <div id="center">
+			  	<button class="loadmore" type="button" onclick="alert('More Products Coming Soon!')">LOAD MORE</button>
+			  </div>
+
+			</div>
+
+			<!-- ABOUT KAY IN LA -->
+			<div class="image" id="ABOUT">
+				<h1 class="sectiontitle">ABOUT</h1>
+				<div class="textwithborder" id="center">
+					<p>Hey loves! I recently started using #KayInLA to document my journey to LA via social media.
+						I'm using this page to showcase my HTML & CSS skills in hopes of securing a full-time position
+						in LA. I'm excited for the journey ahead. I've been saving my own money to move to LA, but I've
+						been looking for additional ways to save money. One day, I came across a bunch of clothes I've
+						barely worn that I wanted to get rid of and thought, "Why not sell them as another way to save
+						money?" Sooo… I created an online store to make things easy and convenient. If you would like to
+						support my dreams, purchase something for yourself or a loved one. If you prefer not to purchase
+						an item, but would still like to support you can purchase the donation item with your desired
+						amount. ALL of the proceeds will go toward my move to LA. Thank you in advance to anyone who makes
+						a purchase. Your support means the world to me!
+					</p>
+				</div>
+			</div>
+
+			<!-- CONTACT ME -->
+			<div class="section" id="CONTACT">
+				<h1 id="center">CONTACT ME</h1>
+				<br>
+				<p id="center"><strong>To contact me, please fill out the form below.
+					I look forward to hearing from you! ❤️</strong>
+				</p>
+
+				<div class="formcontainer">
+						<form action="email.php" method="post">
+				  		First Name <span class="note">(required)</span><br>
+				  		<input type="text" name="first_name"><br><br>
+				  		Last Name <span class="note">(required)</span><br>
+				  		<input type="text" name="last_name"><br><br>
+				  		Email <span class="note">(required)</span><br>
+				  		<input type="text" name="email">
+						</form>
+
+				  	<form action="email.php" method="post">
+				  		Message <span class="note">(required)</span><br>
+				  		<textarea rows="8" name="message" cols="70"></textarea><br>
+				  		<input class="contact" type="submit" name="Send" value="SUBMIT" align="right">
+						</form>
+				</div>
+			</div>
+
 		</div>
-	</div>
-</div>
 
-<!-- SHOP -->
+		<!-- FOOTER  -->
+		<footer>
+			<a href="#"><p><strong>&uarr;</strong></p></a>
+			<a href="#">Top</a>
+			<br>
+			<br>
+			&copy; 2016 by #KayInLA. Supporting Kay's dream of moving to LA.
+		</footer>
 
-<div class="pag" id="SHOP">
-<h1 style="text-align: center;">SHOP</h1><br>
+		<!-- JAVASCRIPT -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script>
+		/* Highlights the current page while scrolling */
+			$(window).scroll(function() {
+			    var position = $(this).scrollTop();
 
-<div style=" margin: 0 50px 10px 50px; overflow: hidden;">
-	<div class="store_img" style="margin-top: 0;">
-        <img src="KayInLAImages/KayInLALogo_square.png" alt="$50 Donation" width=100% height="300px">
-        <div class="desc"><a href="#">$50 Donation</a><br>$50.00</div>
-    </div>
-    <div class="store_img" style="margin-top: 0;">
-        <img src="KayInLAImages/KayInLALogo_square.png" alt="$20 Donation" width="100%" height="300px">
-        <div class="desc"><a href="#">$20 Donation</a><br>$20.00</div>
-    </div>
-    <div class="store_img" style="margin-top: 0;">
-        <img src="KayInLAImages/KayInLALogo_square.png" alt="$10 Donation" width="100%" height="300px">
-        <div class="desc"><a href="#">$10 Donation</a><br>$10.00</div>
-    </div>
-    <div class="store_img">
-        <img src="KayInLAImages/KayInLALogo_square.png" alt="$5 Donation" width=100% height="300px">
-        <div class="desc"><a href="#">$5 Donation</a><br>$5.00</div>
-    </div>
-    <div class="store_img">
-        <img src="KayInLAImages/waterfalljacket.png" alt="beige waterfall jacket" width=100% height="300px">
-        <div class="desc"><a href="#">Rock & Republic Waterfall Jacket</a><br>$15.00</div>
-    </div>
-    <div class="store_img">
-        <img src="KayInLAImages/MKshirt1.png" alt="Michael Kors black shirt" width=100% height="300px" onmouseover="this.src='KayInLAImages/MKshirt2.png';" onmouseout="this.src='KayInLAImages/MKshirt1.png';">
-        <div class="desc"><a href="#">Michael Kors Faux Leather Shirt</a><br>$15.00</div>
-    </div>
-    <div class="store_img">
-        <img src="KayInLAImages/denimshirt.jpg" alt="Forever 21 denim shirt" width="100%" height="300px">
-        <div class="desc"><a href="#">Forever 21 Denim Shirt</a><br>$20.00</div>
-    </div>
-    <div class="store_img">
-        <img src="KayInLAImages/grayskirt.png" alt="Calvin Klein gray skirt" width="100%" height="300px">
-        <div class="desc"><a href="#">Calvin Klein Skirt</a><br>$20.00</div>
-    </div>
-    <div class="store_img">
-        <img src="KayInLAImages/gapsweater.png" alt="GAP cowl neck sweater" width="100%" height="300px">
-        <div class="desc"><a href="#">GAP Cowl Neck Sweater</a><br>$15.00</div>
-    </div>
-</div>
+			    $('.section, .image').each(function() {
+			        var target = $(this).offset().top;
+			        var id = $(this).attr('id');
 
-    <div align="center"; style="clear: both;">
-    	<button type="button" style="background-color: white; color: #B30E37; width: 20%;  font-family: 'Source Sans Pro', sans-serif;font-size: 16px; border-radius: 0; border: 1px solid #C9B269;padding: 10px;"onclick="alert('More Products Coming Soon!')">LOAD MORE</button>
-    </div>
+							if (position >= target - 300) {
+								$('a').removeClass('active');
+					 		 	$('a.circle').removeClass('circle_active');
+					    	$("[href=\\#"+id+"]").addClass('active');
+					 		 	$("a.circle[href=\\#"+id+"]").addClass('circle_active');
+			        }
+			    });
+			});
+		</script>
 
-</div>
-
-<!-- ABOUT KAY IN LA -->
-
-<div class="image" id="ABOUT">
-<img src="KayInLAImages/KayInLA_Background.jpg" alt= "KayInLA" width="100%">
-	<div><h1 style="color: white; text-align: center; top: 10%; left: 43.5%; position: absolute;">ABOUT</h1></div>
-	<div class="bloc_about" align="center">
-		<div class="text_about" align="center">
-			<p>Hey loves! I recently started using #KayInLA to document my journey to LA via social media. I'm using this page to showcase my HTML & CSS skills in hopes of securing a full-time position in LA. I'm excited for the journey ahead. I've been saving my own money to move to LA, but I've been looking for additional ways to save money. One day, I came across a bunch of clothes I've barely worn that I wanted to get rid of and thought, "Why not sell them as another way to save money?" Sooo… I created an online store to make things easy and convenient. If you would like to support my dreams, purchase something for yourself or a loved one. If you prefer not to purchase an item, but would still like to support you can purchase the donation item with your desired amount. ALL of the proceeds will go toward my move to LA. Thank you in advance to anyone who makes a purchase. Your support means the world to me!</p>
-		</div>
-	</div>
-</div>
-
-<!-- CONTACT ME -->
-
-<div class="pag" id="CONTACT">
-<h1 style="text-align: center;">CONTACT ME</h1>
-<br>
-<p style="text-align: center;"><strong>To contact me, please fill out the form below. I look forward to hearing from you! ❤️</strong></p>
-
-<div style="margin: 0 auto; width: 80%;">
-	<div style="float: left; padding: 20px;">
-		<form action="email.php" method="post">
-  		First Name <span class="note">(required)</span><br>
-  		<input type="text" name="first_name"><br><br>
-  		Last Name <span class="note">(required)</span><br>
-  		<input type="text" name="last_name"><br><br>
-  		Email <span class="note">(required)</span><br>
-  		<input type="text" name="email"></form>
-  	</div>
-  	<div style="float: left; padding: 20px;">
-  		<form action="send.php" method="post">
-  		Message <span class="note">(required)</span><br>
-  		<textarea rows="8" name="message" cols="70"></textarea><br>
-  		<input type="submit" name="Send" value="SUBMIT" align="right" style="background-color: #B30E37; color: white; width: 80px; height: 40px; font-family: 'Source Sans Pro', sans-serif; border-radius: 5px; border: 1px solid #B30E37; font-weight: bold;">
-		</form>
-	</div>
-</div>
-</div>
-
-<!-- CLOSE CONTAINER -->
-
-</div>
-
-<!-- FOOTER  -->
-
-<footer>
-	<a href="#"><p><strong>&uarr;</strong></p></a> <a href="#">Top</a> <br><br> &copy; 2016 by #KayInLA. Supporting Kay's dream of moving to LA.
-</footer>
-
-
-</body>
+	</body>
 </html>
