@@ -67,6 +67,7 @@ div.transbox {
 }
 div.img_port_small {
     margin: 3px;
+    padding: 0px;
     border: 1px solid #ccc;
     float: left;
     width: 152px;
@@ -77,6 +78,7 @@ div.img_port_small:hover {
 div.img_port_small img {
     width: 100%;
     height: auto;
+    display: block;
 }
 div.img_port_medium {
     margin: 3px;
@@ -90,6 +92,7 @@ div.img_port_medium:hover {
 div.img_port_medium img {
     width: 100%;
     height: auto;
+    display: block;
 }
 div.img_port_large {
     margin: 3px;
@@ -103,6 +106,7 @@ div.img_port_large:hover {
 div.img_port_large img {
     width: 100%;
     height: auto;
+    display: block;
 }
 div.img_land {
     margin: 3px;
@@ -116,6 +120,7 @@ div.img_land:hover {
 div.img_land img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 /*Headings and Fonts*/
@@ -164,7 +169,7 @@ p {
     line-height: 20px;
     line-height: 150%;
 }
-p.centerlink {
+p.photocred {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -174,6 +179,7 @@ p.centerlink {
   line-height: 150%;
   text-align: center;
   clear: both;
+  display: block;
 }
 
 /*Links*/
@@ -322,7 +328,6 @@ input[type=text] {
 input[type=text]:focus {
     outline: 1px solid rgb(111, 156, 156);
 }
-
 /*Form Elements*/
 form {
     font-family: 'Source Sans Pro', sans-serif;
@@ -336,6 +341,9 @@ input[type=submit].contact {
   font-weight: bold;
   border-radius: 5px;
   border: 1px solid rgb(52,123,124);
+}
+input[type=submit].contact:hover {
+  border: 2px solid black;
 }
 textarea {
     border: 1px solid rgb(230,230,230);
