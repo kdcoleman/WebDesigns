@@ -307,7 +307,6 @@ nav ul li a.current {
   min-height: 100%;
   overflow: hidden;
   display: block;
-  text-align: center;
 }
 
 .section {
@@ -369,7 +368,7 @@ nav ul li a.current {
   background-position: center;
   position: absolute;
 }
-.pic:hover .photoCred {
+.pic:hover .photo-cred {
   opacity: 1;
 }
 .photo-cred {
@@ -383,14 +382,6 @@ nav ul li a.current {
   color: black;
   opacity: 0;
   transition: 0.5s;
-}
-
-.image {
-	padding: 10px 20px;
-  display: block;
-}
-.image img {
-  padding: 0 10px;
 }
 
 .badge-image {
@@ -408,18 +399,17 @@ nav ul li a.current {
   display: inline-block;
 }
 
-.home-image img {
-  border: 2px solid white;
-  box-shadow: 0 0 3px #B8ADAD;
-  margin: 0 5px;
-}
-
 .space {
   margin: 50px 0px;
   padding: 20px 0px;
 }
 
 /*Specialized Images*/
+img.home {
+  border: 2px solid white;
+  box-shadow: 0 0 3px #B8ADAD;
+  margin: 0 5px;
+}
 img.welcome {
   float: right;
   margin: 0 0 10px 80px;
@@ -468,4 +458,12 @@ footer {
   font-variant: normal;
   font-weight: 400;
   letter-spacing: 2px;
+}
+
+.footer-image {
+	padding: 10px 20px;
+  display: block;
+}
+.footer-image img {
+  padding: 0 10px;
 }
