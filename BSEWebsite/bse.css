@@ -93,7 +93,7 @@ p.contact {
   padding-top: 10px;
 }
 
-br.listspace {
+br.list-space {
   display: block;
   content: "";
   margin-top: 10px;
@@ -132,7 +132,7 @@ a {
   color: rgb(70,70,70);
   text-decoration: none;
 }
-a.buttlink {
+a.button-link {
   background-color: white;
   color: rgb(70,70,70);
   font-family: 'Mukta Vaani', sans-serif;
@@ -372,7 +372,7 @@ nav ul li a.current {
 .pic:hover .photoCred {
   opacity: 1;
 }
-.photoCred {
+.photo-cred {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -393,12 +393,12 @@ nav ul li a.current {
   padding: 0 10px;
 }
 
-.badgeimage {
+.badge-image {
   margin: 20px;
 	padding: 20px;
   float: left;
 }
-.badgeimage img {
+.badge-image img {
   width: 150px;
   height: 150px;
   padding: 0px 40px 0px 65px;
@@ -408,7 +408,7 @@ nav ul li a.current {
   display: inline-block;
 }
 
-.homeimage img {
+.home-image img {
   border: 2px solid white;
   box-shadow: 0 0 3px #B8ADAD;
   margin: 0 5px;
