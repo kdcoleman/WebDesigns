@@ -2,44 +2,118 @@
 Author: Kayla Coleman
 */
 
+/* Downloaded Fonts*/
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Cinzel:400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+@import url(https://fonts.googleapis.com/css?family=Cookie);
+@import url(https://fonts.googleapis.com/css?family=GFS+Didot);
+@import url(https://fonts.googleapis.com/css?family=Mukta+Vaani:200,300,400,500,600);
+@import url(https://fonts.googleapis.com/css?family=Caudex:400,400i,700,700i);
+@import url(https://fonts.googleapis.com/css?family=Pinyon+Script&display=swap);
+
+/*Selectors*/
+#center {
+  text-align: center;
+}
+#right {
+  text-align: right;
+}
+
 /*Specialized Divs*/
 div.container {
-    background-color: white;
-    color:rgb(65,65,65);
-    margin: 0px 0px;
-    padding: 0px 0px;
+  background-color: white;
+  color:rgb(65,65,65);
+  margin: 0px 0px;
+  padding: 0px 0px;
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+  display: block;
+  padding-bottom: 100px; /* height of your footer */
+  text-align: center;
 }
 
 div.widge {
-    background-color: rgb(230,230,230);
-    color:rgb(65,65,65);
-    padding: 0;
-    border-top: 1px solid rgb(200,200,200);
-    margin: 0;
-    clear: both;
+  background-color: rgb(230,230,230);
+  color:rgb(65,65,65);
+  padding: 0;
+  border-top: 1px solid rgb(200,200,200);
+  margin: 0;
+  clear: both;
+}
+div.pagelem {
+  background-color: white;
+  width: 70%;
+  height: 50%;
+  left: 13%;
+  position: relative;
+  padding: 20px;
+  margin: 30px 0px;
+  overflow: auto;
+}
+div.section {
+  background-color: white;
+  width: 70%;
+  height: 50%;
+  left: 13%;
+  position: relative;
+  padding: 20px 20px 20px 20px;
+  margin: 30px 0px;
+  display: flow-root;
+}
+div.smallsec {
+  background-color: white;
+  padding: 20px 0px;
+  float: left;
+  width: 40%;
+  position: relative;
 }
 
 div.gallery {
-	  float: left;
-	  padding: 1% 3%;
-    display: block;
-    overflow: scroll;
-}
-
-div.image {
-	  padding: 10px 20px 10px 20px;
-    display: block;
+  margin: 30px 10px;
+	padding: 20px;;
+  width: 100%;
+  height: 600px;
+  position: relative;
 }
 
 div.pic {
-    width: 286px;
-    height: 175px;
+  width: 289px;
+  height: 169px;
+  border: 2px solid white;
+  box-shadow: 0 0 3px #B8ADAD;
+  float: left;
+  background-size: 100%;
+  background-position: center;
+  position: absolute;
+}
+div.image {
+	padding: 10px 20px 10px 20px;
+  display: block;
+}
+div.image img {
+  padding: 0 10px;
+}
+div.badgeimage {
+  margin: 20px;
+	padding: 20px;
+  float: left;
+}
+div.badgeimage img {
+  width: 150px;
+  height: 150px;
+  padding: 0px 40px 0px 65px;
+  margin: 10px;
+  background-color: white;
+  float: left;
+  display: inline-block;
+}
+div.homeimage img {
     border: 2px solid white;
     box-shadow: 0 0 3px #B8ADAD;
-    float: left;
-    background-size: 100%;
-    background-position: center;
-    position: relative;
+    margin: 0 5px;
 }
 
 div.photoCred {
@@ -58,27 +132,20 @@ div.photoCred {
 div.pic:hover .photoCred {
   opacity: 1;
 }
-
-div.pagelem {
-	  background-color: white;
-    width: 70%;
-    height: 50%;
-    left: 13%;
-    position: relative;
-    padding: 20px 20px 20px 20px;
-    margin: 30px 0 30px 0;
-    overflow: auto;
+div.space {
+  margin: 50px 0px;
+  padding: 20px 0px;
 }
 
 /*Headings and Fonts*/
 h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 36px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 10px;
-    letter-spacing: 2px;
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 2px;
 }
 h2 {
     font-family: 'Playfair Display', serif;
@@ -96,32 +163,45 @@ h2.script {
   color: #666666;
 }
 h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 15px;
-    letter-spacing: 2px;
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    font-weight: 200;
+    color: #CCAF6D;
 }
 h4 {
-    font-family: 'Playfair Display', serif;
-    font-size: 13px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 15px;
-    letter-spacing: 2px;
+  font-family: 'Mukta Vaani', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 200;
+  line-height: 20px;
+  line-height: 150%;
+  color: rgb(70,70,70);
+  text-align: left;
 }
+
 p  {
-    font-family: 'Mukta Vaani', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 200;
-    line-height: 20px;
-    line-height: 150%;
-    color: rgb(70,70,70);
+  font-family: 'Mukta Vaani', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 200;
+  line-height: 20px;
+  color: rgb(70,70,70);
+}
+p.photographer {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+}
+p.about {
+  padding-left: 254px;
+  text-align: left;
+}
+p.contact {
+  float: left;
+  width: 335px;
+  padding-top: 10px;
 }
 
 br.listspace {
@@ -137,7 +217,6 @@ span.cursive {
     font-variant: normal;
     font-weight: 300;
     line-height: 14px;
-    /*line-height: 150%;*/
     color: #F3B07A;
 }
 
@@ -154,7 +233,7 @@ span.script {
     font-variant: normal;
     font-weight: 400;
     line-height: 14px;
-    /*line-height: 150%;*/
+    text-align: center;
     color: #666666;
 }
 
@@ -172,9 +251,11 @@ header {
 footer {
     padding: 10px;
     margin-top: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     color: rgb(70,70,70);
     background-color: white;
-    clear: both;
     text-align: center;
     font-family: 'Cinzel', serif;
     font-size: 14px;
@@ -186,6 +267,7 @@ footer {
 
 /* Lists */
 div.pagelem ul {
+  width: 50%;
   padding-left: 30px;
   margin-top: 0;
   list-style-type: none;
@@ -303,6 +385,9 @@ button[type=button]:hover {
 }
 
 /*Form*/
+form {
+  text-align: left;
+}
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -320,7 +405,7 @@ input[type=text], select, textarea {
 input[type=submit] {
     background-color: #666666;
     color: white;
-    padding: 7px 5px;
+    padding: 10px;
     border: none;
     box-shadow: 0 0 4px #888888;
     border-radius: 4px;
@@ -328,7 +413,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #FF884D;
+    border: 2px solid #FF884D;
 }
 
 /*Table*/
@@ -339,8 +424,68 @@ td.par {
     padding-left: 20px;
     padding-right: 20px;
 }
+textarea {
+  height:200px;
+}
 
 /*Body Elements*/
+img.welcome {
+  float: right;
+  margin: 0 0 10px 80px;
+  border: 2px solid white;
+  box-shadow: 0 0 3px #B8ADAD;
+  position: relative;
+}
+img.meet {
+  float: left;
+  margin: 0 30px 20px 0;
+  border: 2px solid white;
+  box-shadow: 0 0 3px #B8ADAD;
+  width: 241px;
+  height: 334px;
+}
+img.contact {
+  float: left;
+  border: 2px solid white;
+  box-shadow: 0 0 3px #B8ADAD;
+}
+img.package {
+  float: right;
+  margin: 0 0 0 80px;
+  border: 2px solid white;
+  box-shadow: 0 0 3px #B8ADAD;
+}
+img.love {
+  float: left;
+  margin-right: 50px;
+  box-shadow: 7px 7px #CCAF6D;
+}
+figure {
+  margin: 0 30px 10px 0;
+  float: left;
+  position: absolute;
+  left: 0;
+  top: 40px;
+}
+figcaption {
+  font-family: 'Mukta Vaani', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 200;
+  line-height: 14px;
+  color: rgb(70,70,70);
+  margin: 0px;
+  padding: 0px 0px 0px 40px;
+  position: absolute;
+  bottom: 0;
+}
+
+html, body {
+  background-color:white;
+  position: relative;
+  height: 100%;
+}
 article {
     margin-left: 50px;
     margin-right: 50px;
