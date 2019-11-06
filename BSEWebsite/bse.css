@@ -1,5 +1,7 @@
 /* Stylesheet for BSE Website
+Theme Name: Event Planning
 Author: Kayla Coleman
+Author URI: www.github.com/kdcoleman
 */
 
 /* Downloaded Fonts*/
@@ -13,6 +15,8 @@ Author: Kayla Coleman
 @import url(https://fonts.googleapis.com/css?family=Caudex:400,400i,700,700i);
 @import url(https://fonts.googleapis.com/css?family=Pinyon+Script&display=swap);
 
+/***************************** GENERIC ELEMENTS *******************************/
+
 /*Selectors*/
 #center {
   text-align: center;
@@ -21,124 +25,14 @@ Author: Kayla Coleman
   text-align: right;
 }
 
-/*Specialized Divs*/
-div.container {
-  background-color: white;
-  color:rgb(65,65,65);
-  margin: 0px 0px;
-  padding: 0px 0px;
+html, body {
+  background-color:white;
   position: relative;
-  min-height: 100%;
-  overflow: hidden;
-  display: block;
-  padding-bottom: 100px; /* height of your footer */
-  text-align: center;
+  height: 100%;
 }
 
-div.widge {
-  background-color: rgb(230,230,230);
-  color:rgb(65,65,65);
-  padding: 0;
-  border-top: 1px solid rgb(200,200,200);
-  margin: 0;
-  clear: both;
-}
-div.pagelem {
-  background-color: white;
-  width: 70%;
-  height: 50%;
-  left: 13%;
-  position: relative;
-  padding: 20px;
-  margin: 30px 0px;
-  overflow: auto;
-}
-div.section {
-  background-color: white;
-  width: 70%;
-  height: 50%;
-  left: 13%;
-  position: relative;
-  padding: 20px 20px 20px 20px;
-  margin: 30px 0px;
-  display: flow-root;
-}
-div.smallsec {
-  background-color: white;
-  padding: 20px 0px;
-  float: left;
-  width: 40%;
-  position: relative;
-}
-
-div.gallery {
-  margin: 30px 10px;
-	padding: 20px;;
-  width: 100%;
-  height: 600px;
-  position: relative;
-}
-
-div.pic {
-  width: 289px;
-  height: 169px;
-  border: 2px solid white;
-  box-shadow: 0 0 3px #B8ADAD;
-  float: left;
-  background-size: 100%;
-  background-position: center;
-  position: absolute;
-}
-div.image {
-	padding: 10px 20px 10px 20px;
-  display: block;
-}
-div.image img {
-  padding: 0 10px;
-}
-div.badgeimage {
-  margin: 20px;
-	padding: 20px;
-  float: left;
-}
-div.badgeimage img {
-  width: 150px;
-  height: 150px;
-  padding: 0px 40px 0px 65px;
-  margin: 10px;
-  background-color: white;
-  float: left;
-  display: inline-block;
-}
-div.homeimage img {
-    border: 2px solid white;
-    box-shadow: 0 0 3px #B8ADAD;
-    margin: 0 5px;
-}
-
-div.photoCred {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding-top: 20%;
-  background: rgba(255, 255, 255, 0.8);
-  color: black;
-  opacity: 0;
-  transition: 0.5s;
-}
-
-div.pic:hover .photoCred {
-  opacity: 1;
-}
-div.space {
-  margin: 50px 0px;
-  padding: 20px 0px;
-}
-
-/*Headings and Fonts*/
-h1 {
+/*Headings*/
+h1, h2 {
   font-family: 'Playfair Display', serif;
   font-size: 36px;
   font-style: normal;
@@ -148,13 +42,8 @@ h1 {
   letter-spacing: 2px;
 }
 h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 24px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 2px;
+  font-size: 24px;
+  line-height: 26px;
 }
 h2.script {
   font-family: 'Cardo', serif;
@@ -163,10 +52,10 @@ h2.script {
   color: #666666;
 }
 h3 {
-    font-family: 'Cinzel', serif;
-    font-size: 14px;
-    font-weight: 200;
-    color: #CCAF6D;
+  font-family: 'Cinzel', serif;
+  font-size: 14px;
+  font-weight: 200;
+  color: #CCAF6D;
 }
 h4 {
   font-family: 'Mukta Vaani', sans-serif;
@@ -210,14 +99,15 @@ br.listspace {
   margin-top: 10px;
 }
 
+/*Spans*/
 span.cursive {
-    font-family: 'Cookie', cursive;
-    font-size: 70px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 300;
-    line-height: 14px;
-    color: #F3B07A;
+  font-family: 'Cookie', cursive;
+  font-size: 70px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  line-height: 14px;
+  color: #F3B07A;
 }
 
 span.fancy {
@@ -227,142 +117,61 @@ span.fancy {
 }
 
 span.script {
-    font-family: 'GFS Didot', serif;
-    font-size: 24px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 14px;
-    text-align: center;
-    color: #666666;
-}
-
-/*Header and Footer*/
-header {
-    padding: 2em;
-    padding-top: 0;
-    padding-bottom: 1.8em;
-    color: black;
-    background-color: white;
-    clear: left;
-    text-align: center;
-    margin-top: 0;
-}
-footer {
-    padding: 10px;
-    margin-top: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    color: rgb(70,70,70);
-    background-color: white;
-    text-align: center;
-    font-family: 'Cinzel', serif;
-    font-size: 14px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    letter-spacing: 2px;
-}
-
-/* Lists */
-div.pagelem ul {
-  width: 50%;
-  padding-left: 30px;
-  margin-top: 0;
-  list-style-type: none;
-  text-align: left;
-  font-family: 'Mukta Vaani', sans-serif;
-  font-size: 18px;
+  font-family: 'GFS Didot', serif;
+  font-size: 24px;
   font-style: normal;
   font-variant: normal;
-  font-weight: 200;
-  line-height: 140%;
-  color: rgb(70,70,70);
-}
-div.pagelem ul li {
-  list-style-position: outside;
-  text-indent: -1em;
-}
-div.pagelem ul li:before {
-  content: '\007E';
-  margin-right: 10px;
-
-}
-
-/*Top Navigation Bar*/
-nav {
-    align-items: center;
-    background-color: white;
-    width: 100%;
-    float: left;
-    margin: 0;
-    margin-bottom: 10px;
-    padding: 0;
-    text-align: center;
-}
-nav ul {
-    display: inline-block;
-    text-align: center;
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-}
-nav ul li {
-    float: left;
-    text-align: center;
-}
-
-nav ul li:first-child:before {
-    content: " \2501 \2501 \2501 \2501";
-    color: rgb(70,70,70);
-}
-nav ul li:last-child:after {
-    content: " \2501 \2501 \2501 \2501";
-    color: rgb(70,70,70);
-}
-nav ul li a {
-    display: inline-block;
-    color: rgb(70,70,70);
-    font-size: 14px;
-    font-weight: 400;
-    font-family: 'Cinzel', serif;
-    text-align: center;
-    padding: 40px;
-    text-decoration: none;
-}
-nav ul li a:hover {
-	color: #CCAF6D;
-}
-nav ul li a.current {
-    color: #CCAF6D;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: center;
+  color: #666666;
 }
 
 /*Links*/
 a {
-    color: rgb(70,70,70);
-    text-decoration: none;
+  color: rgb(70,70,70);
+  text-decoration: none;
 }
 a.buttlink {
-    background-color: white;
-    color: rgb(70,70,70);
-    font-family: 'Mukta Vaani', sans-serif;
-    font-size: 16px;
-    font-weight: 200;
-    box-shadow:none;
-    border-radius: 0;
-    border: 1px solid #CCAF6D;
-    padding: 5px 50px;
+  background-color: white;
+  color: rgb(70,70,70);
+  font-family: 'Mukta Vaani', sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  box-shadow:none;
+  border-radius: 0;
+  border: 1px solid #CCAF6D;
+  padding: 5px 50px;
 }
 
 /*Lines*/
 hr.med {
-    border: none;
-    height: 2px;
-    color: #B8ADAD;
-    background-color: #B8ADAD;
+  border: none;
+  height: 2px;
+  color: #B8ADAD;
+  background-color: #B8ADAD;
+}
+
+/*Figures*/
+figure {
+  margin: 0 30px 10px 0;
+  float: left;
+  position: absolute;
+  left: 0;
+  top: 40px;
+}
+figcaption {
+  font-family: 'Mukta Vaani', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 200;
+  line-height: 14px;
+  color: rgb(70,70,70);
+  margin: 0px;
+  padding: 0px 0px 0px 40px;
+  position: absolute;
+  bottom: 0;
 }
 
 /*Buttons*/
@@ -376,59 +185,241 @@ button[type=button] {
     border-radius: 0;
     border: 0;
     padding: 10px 40px;
-    /*margin: 0;*/
-    /*display: inline;*/
 }
 button[type=button]:hover {
     background-color: white;
     color: #CCAF6D;
 }
 
+/*Table*/
+table {
+  padding: 20px;
+}
+
+td.par {
+  padding: 0px 20px;
+}
+
 /*Form*/
 form {
   text-align: left;
 }
+
 input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-    font-family: 'Mukta Vaani', sans-serif;
-    font-size: 12px;
-    box-shadow: 2px 2px 2px #888888;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: 'Mukta Vaani', sans-serif;
+  font-size: 12px;
+  box-shadow: 2px 2px 2px #888888;
 }
-
 input[type=submit] {
-    background-color: #666666;
-    color: white;
-    padding: 10px;
-    border: none;
-    box-shadow: 0 0 4px #888888;
-    border-radius: 4px;
-    cursor: pointer;
+  background-color: #666666;
+  color: white;
+  padding: 10px;
+  border: none;
+  box-shadow: 0 0 4px #888888;
+  border-radius: 4px;
+  cursor: pointer;
 }
-
 input[type=submit]:hover {
-    border: 2px solid #FF884D;
+  border: 2px solid #FF884D;
 }
 
-/*Table*/
-table {
-    padding: 20px;
-}
-td.par {
-    padding-left: 20px;
-    padding-right: 20px;
-}
 textarea {
-  height:200px;
+  height: 200px;
 }
 
-/*Body Elements*/
+/********************************* HEADER *************************************/
+header {
+  padding: 2em;
+  padding-top: 0;
+  padding-bottom: 1.8em;
+  color: black;
+  background-color: white;
+  clear: left;
+  text-align: center;
+  margin-top: 0;
+}
+
+/******************************* NAVIGATION ***********************************/
+nav {
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  float: left;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  text-align: center;
+}
+nav ul {
+  display: inline-block;
+  text-align: center;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+nav ul li {
+  float: left;
+  text-align: center;
+}
+
+nav ul li:first-child:before {
+  content: " \2501 \2501 \2501 \2501";
+  color: rgb(70,70,70);
+}
+nav ul li:last-child:after {
+  content: " \2501 \2501 \2501 \2501";
+  color: rgb(70,70,70);
+}
+nav ul li a {
+  display: inline-block;
+  color: rgb(70,70,70);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  padding: 40px;
+  text-decoration: none;
+}
+nav ul li a:hover {
+	color: #CCAF6D;
+}
+nav ul li a.current {
+  color: #CCAF6D;
+}
+
+/******************************* MAIN CONTENT *********************************/
+.container {
+  background-color: white;
+  color:rgb(65,65,65);
+  margin: 0px;
+  padding: 0px 0px 100px 0px;
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+}
+
+.section {
+  background-color: white;
+  width: 70%;
+  height: 50%;
+  left: 13%;
+  position: relative;
+  padding: 20px;
+  margin: 30px 0px;
+  overflow: auto;
+  display: flow-root;
+}
+.section ul {
+  width: 50%;
+  padding-left: 30px;
+  margin-top: 0;
+  list-style-type: none;
+  text-align: left;
+  font-family: 'Mukta Vaani', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 200;
+  line-height: 140%;
+  color: rgb(70,70,70);
+}
+.section ul li {
+  list-style-position: outside;
+  text-indent: -1em;
+}
+.section ul li:before {
+  content: '\007E';
+  margin-right: 10px;
+}
+
+.smallsec {
+  background-color: white;
+  padding: 20px 0px;
+  float: left;
+  width: 40%;
+  position: relative;
+}
+
+.gallery {
+  margin: 30px 10px;
+	padding: 20px;;
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.pic {
+  width: 289px;
+  height: 169px;
+  border: 2px solid white;
+  box-shadow: 0 0 3px #B8ADAD;
+  float: left;
+  background-size: 100%;
+  background-position: center;
+  position: absolute;
+}
+.pic:hover .photoCred {
+  opacity: 1;
+}
+.photoCred {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 20%;
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.image {
+	padding: 10px 20px;
+  display: block;
+}
+.image img {
+  padding: 0 10px;
+}
+
+.badgeimage {
+  margin: 20px;
+	padding: 20px;
+  float: left;
+}
+.badgeimage img {
+  width: 150px;
+  height: 150px;
+  padding: 0px 40px 0px 65px;
+  margin: 10px;
+  background-color: white;
+  float: left;
+  display: inline-block;
+}
+
+.homeimage img {
+  border: 2px solid white;
+  box-shadow: 0 0 3px #B8ADAD;
+  margin: 0 5px;
+}
+
+.space {
+  margin: 50px 0px;
+  padding: 20px 0px;
+}
+
+/*Specialized Images*/
 img.welcome {
   float: right;
   margin: 0 0 10px 80px;
@@ -460,35 +451,21 @@ img.love {
   margin-right: 50px;
   box-shadow: 7px 7px #CCAF6D;
 }
-figure {
-  margin: 0 30px 10px 0;
-  float: left;
+
+/********************************** FOOTER ************************************/
+footer {
+  padding: 10px;
+  margin-top: 10px;
   position: absolute;
-  left: 0;
-  top: 40px;
-}
-figcaption {
-  font-family: 'Mukta Vaani', sans-serif;
+  bottom: 0;
+  width: 100%;
+  color: rgb(70,70,70);
+  background-color: white;
+  text-align: center;
+  font-family: 'Cinzel', serif;
   font-size: 14px;
   font-style: normal;
   font-variant: normal;
-  font-weight: 200;
-  line-height: 14px;
-  color: rgb(70,70,70);
-  margin: 0px;
-  padding: 0px 0px 0px 40px;
-  position: absolute;
-  bottom: 0;
-}
-
-html, body {
-  background-color:white;
-  position: relative;
-  height: 100%;
-}
-article {
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 1em;
-    overflow: hidden;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
