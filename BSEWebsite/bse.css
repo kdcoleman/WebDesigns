@@ -463,10 +463,10 @@ footer {
   letter-spacing: 2px;
 }
 
-.footer-image {
+.social-bar {
 	padding: 10px 20px;
   display: block;
 }
-.footer-image img {
+.social-bar img {
   padding: 0 10px;
 }
