@@ -29,7 +29,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 /*Body*/
 body {
-  background-color: black;
+  background-color: #000;
   margin: 0;
 }
 
@@ -110,7 +110,7 @@ input[type=text] {
   border-radius: 0px;
   font-size: 14px;
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: white;
+  background-color: #FFF;
   padding: 10px;
 }
 input[type=text]:focus {
@@ -131,8 +131,8 @@ header {
   padding: 2em;
   padding-top: 2.5em;
   padding-bottom: 1.8em;
-  color: black;
-  background-color: white;
+  color: #000;
+  background-color: #FFF;
   clear: left;
   text-align: center;
 }
@@ -165,7 +165,7 @@ nav[role="top"] ul li {
 }
 nav[role="top"] ul li:after {
   content: " \2022";
-  color:white;
+  color:#FFF;
   opacity: 0.8;
  }
 nav[role="top"] ul li:last-child:after {
@@ -173,7 +173,7 @@ nav[role="top"] ul li:last-child:after {
 }
 nav[role="top"] ul li a {
   display: inline-block;
-  color: black;
+  color: #000;
   font-size: 14px;
   font-weight: 600;
   font-family: 'Source Sans Pro', sans-serif;
@@ -197,7 +197,7 @@ nav[role="side"] ul {
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
-  background-color: white;
+  background-color: #FFF;
 }
 nav[role="side"] ul li {
   text-align: left;
@@ -230,7 +230,7 @@ input[type=text].search {
   border-radius: 0px;
   font-size: 14px;
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: white;
+  background-color: #FFF;
   padding: 10px;
 }
 input[type=text].search:focus {
@@ -241,14 +241,14 @@ input[type=text].search:focus {
 
 /*Specialized Divs*/
 .container {
-  background-color: white;
+  background-color: #FFF;
   color:rgb(65,65,65);
   margin: 0px 25px 30px;
   padding: 0;
 }
 
 .section {
-  background-color: white;
+  background-color: #FFF;
   color:rgb(65,65,65);
   padding: 50px;
   padding-top: 40px;
@@ -262,7 +262,7 @@ input[type=text].search:focus {
 }
 
 .transparent-box {
-  background-color: white;
+  background-color: #FFF;
   width: 40%;
   height: 40%;
   opacity: 0.94;
@@ -336,7 +336,7 @@ input[type=text].search:focus {
 /*Specialized Forms*/
 input[type=submit].contact {
   background-color: rgb(52, 123, 124);
-  color: white;
+  color: #FFF;
   width: 80px;
   height: 40px;
   font-family: 'Source Sans Pro', sans-serif;
@@ -345,7 +345,7 @@ input[type=submit].contact {
   border: 1px solid rgb(52,123,124);
 }
 input[type=submit].contact:hover {
-  border: 2px solid black;
+  border: 2px solid #000;
 }
 
 /*Specialized Tables*/
@@ -358,7 +358,7 @@ td.home {
 /********************************** FOOTER ************************************/
 footer {
   padding: 3em;
-  color: white;
+  color: #FFF;
   background-color: rgb(70,70,70);
   clear: left;
   text-align: center;
