@@ -41,57 +41,57 @@ h1, h2 {
   line-height: 10px;
   letter-spacing: 2px;
 }
-h2 {
-  font-size: 24px;
-  line-height: 26px;
-}
-h2.script {
-  font-family: 'Cardo', serif;
-  font-style: italic;
-  font-size: 24px;
-  color: #666666;
-}
-h3 {
-  font-family: 'Cinzel', serif;
-  font-size: 14px;
-  font-weight: 200;
-  color: #CCAF6D;
-}
-h4 {
-  font-family: 'Mukta Vaani', sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 200;
-  line-height: 20px;
-  line-height: 150%;
-  color: rgb(70,70,70);
-  text-align: left;
-}
+  h2 {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  h2.script {
+    font-family: 'Cardo', serif;
+    font-style: italic;
+    font-size: 24px;
+    color: #666666;
+  }
+  h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    font-weight: 200;
+    color: #CCAF6D;
+  }
+  h4 {
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 200;
+    line-height: 20px;
+    line-height: 150%;
+    color: rgb(70,70,70);
+    text-align: left;
+  }
 
-p  {
-  font-family: 'Mukta Vaani', sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 200;
-  line-height: 20px;
-  color: rgb(70,70,70);
-}
-p.photographer {
-  display: block;
-  font-size: 14px;
-  text-align: center;
-}
-p.about {
-  padding-left: 254px;
-  text-align: left;
-}
-p.contact {
-  float: left;
-  width: 335px;
-  padding-top: 10px;
-}
+  p  {
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 200;
+    line-height: 20px;
+    color: rgb(70,70,70);
+  }
+    p.photographer {
+      display: block;
+      font-size: 14px;
+      text-align: center;
+    }
+    p.about {
+      padding-left: 254px;
+      text-align: left;
+    }
+    p.contact {
+      float: left;
+      width: 335px;
+      padding-top: 10px;
+    }
 
 br.list-space {
   display: block;
@@ -132,25 +132,34 @@ a {
   color: rgb(70,70,70);
   text-decoration: none;
 }
-a.button-link {
-  background-color: #FFF;
-  color: rgb(70,70,70);
-  font-family: 'Mukta Vaani', sans-serif;
-  font-size: 16px;
-  font-weight: 200;
-  box-shadow:none;
-  border-radius: 0;
-  border: 1px solid #CCAF6D;
-  padding: 5px 50px;
-}
+  a.button-link {
+    background-color: #FFF;
+    color: rgb(70,70,70);
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    box-shadow:none;
+    border-radius: 0;
+    border: 1px solid #CCAF6D;
+    padding: 5px 50px;
+    margin: 50px;
+    clear: both;
+  }
 
 /*Lines*/
-hr.med {
+hr {
   border: none;
   height: 2px;
+  width: 75%;
   color: #B8ADAD;
   background-color: #B8ADAD;
 }
+  hr.love {
+    border: none;
+    height: 3px;
+    color: #CCAF6D;
+    background-color: #CCAF6D;
+  }
 
 /*Figures*/
 figure {
@@ -203,6 +212,8 @@ td.par {
 /*Form*/
 form {
   text-align: left;
+  float: right;
+  width: 50%;
 }
 
 input[type=text], select, textarea {
@@ -228,7 +239,7 @@ input[type=submit] {
   cursor: pointer;
 }
 input[type=submit]:hover {
-  border: 2px solid #FF884D;
+  background-color: #FF884D;
 }
 
 textarea {
@@ -312,11 +323,9 @@ nav ul li a.current {
 .section {
   background-color: #FFF;
   width: 70%;
-  height: 50%;
-  left: 13%;
   position: relative;
   padding: 20px;
-  margin: 30px 0px;
+  margin: 0px auto;
   overflow: auto;
   display: flow-root;
 }
@@ -384,23 +393,8 @@ nav ul li a.current {
   transition: 0.5s;
 }
 
-.badge-image {
-  margin: 20px;
-	padding: 20px;
-  float: left;
-}
-.badge-image img {
-  width: 150px;
-  height: 150px;
-  padding: 0px 40px 0px 65px;
-  margin: 10px;
-  background-color: #FFF;
-  float: left;
-  display: inline-block;
-}
-
 .space {
-  margin: 50px 0px;
+  margin: 25px 0px;
   padding: 20px 0px;
 }
 
@@ -416,6 +410,15 @@ img.welcome {
   border: 2px solid #FFF;
   box-shadow: 0 0 3px #B8ADAD;
   position: relative;
+}
+img.badge {
+  width: 150px;
+  height: 150px;
+  padding: 0px 25px;
+  margin: 10px;
+  background-color: #FFF;
+  float: left;
+  display: inline-block;
 }
 img.meet {
   float: left;
