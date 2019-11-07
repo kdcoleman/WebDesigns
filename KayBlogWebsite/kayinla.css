@@ -14,6 +14,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
 
+/***************************** GENERIC ELEMENTS *******************************/
+
 /*Selectors*/
 #center {
   text-align: center;
@@ -22,101 +24,42 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   margin-top: 0;
 }
 
-/*Specialized Divs*/
-div.container {
-    background-color: white;
-    margin: 0;
-    padding: 0;
-}
-div.section {
-	background-color: white;
-  color:#C9B269;
-  padding: 20px;
-  display: block;
-  overflow: hidden;
-}
-div.formcontainer {
-  margin: 0 auto;
-  width: 80%;
-}
-div.image {
-	display: block;
-	position: relative;
-	margin-top: 50px;
-  width: 100%;
-  height: 600px;
-  background-image: url(KayInLAImages/KayInLA_Background.jpg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-div.logowithtext {
-  width: 44%;
-	height: auto;
-  top: 23%;
-  left: 26%;
-  position: absolute;
-	padding: 15px;
-	margin: 20px;
-  border: 1px solid #C9B269;
+/*Body*/
+body {
   background-color: white;
-  outline: 2px solid #C9B269;
-  outline-offset: -10px;
-}
-div.textwithborder {
-  width: 55%;
-  height: auto;
-  padding: 20px 40px;
-  margin: 20px;
-  top: 25%;
-  left: 18%;
-  position: absolute;
-  border: 1px solid #C9B269;
-  background-color: white;
-  outline: 2px solid #C9B269;
-  outline-offset: -10px;
-}
-div.storeimage {
-    margin: 10px 30px 20px 40px;
-    float: left;
-    width: 25%;
-}
-div.desc {
-    padding: 15px;
-    text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: black;
-}
-div.desc a {
-	color: #C9B269;
+  margin: 0;
 }
 
-/*Headings and Fonts*/
-h1 {
-    font-family: 'Source Sans Pro', sans-serif;
+/*Headings*/
+h1, h2, h4, p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-variant: normal;
+}
+
+  h1 {
     font-size: 36px;
-    font-style: normal;
-    font-variant: normal;
     font-weight: 400;
     line-height: 10px;
     letter-spacing: 5px;
-}
-h1.sectiontitle {
-  color: white;
-  text-align: center;
-  top: 10%;
-  left: 45%;
-  position: absolute;
-}
-h2 {
-    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  h1.section-title {
+    color: white;
+    text-align: center;
+    top: 10%;
+    left: 45%;
+    position: absolute;
+  }
+
+  h2 {
     font-size: 24px;
-    font-style: normal;
-    font-variant: normal;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 2px;
-}
-h3 {
+  }
+
+  h3 {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
     font-style: normal;
@@ -125,24 +68,22 @@ h3 {
     line-height: 8px;
     letter-spacing: 12px;
     color: #C9B269;
-}
-h4 {
-    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  h4 {
     font-size: 10px;
-    font-style: normal;
-    font-variant: normal;
     font-weight: 200;
     line-height: 10px;
     letter-spacing: 2px;
-}
-p {
-    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  p {
     font-size: 16px;
-    font-style: normal;
-    font-variant: normal;
     font-weight: 300;
     line-height: 150%;
-}
+  }
+
+/*Lines*/
 hr {
 	border-bottom: 1px solid #C9B269;
 	border-right: 0;
@@ -152,10 +93,6 @@ hr {
 	margin-top: 20px;
 	margin-bottom: 0;
 }
-body {
-  background-color: white;
-  margin: 0;
-}
 
 /*Links*/
 a {
@@ -163,122 +100,138 @@ a {
   text-decoration: none;
 }
 
-/*Header and Footer*/
-header {
-    padding: 2em;
-    padding-top: 2.5em;
-    padding-bottom: 1.8em;
-    color: black;
-    background-color: white;
-    clear: left;
-    text-align: center;
+/*Forms*/
+form {
+  font-family: 'Source Sans Pro', sans-serif;
+  display: inline;
+  float: left;
+  padding: 20px;
 }
-footer {
-    padding: 3em;
-    color: white;
-    background-color: #B30E37;
-    clear: left;
-    text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 13px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    letter-spacing: 2px;
+input[type=text] {
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #C9B269;
+  border-radius: 0px;
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: white;
+  padding: 10px;
 }
-footer a {
-	color: white;
+input[type=text]:focus {
+  outline: 1px solid #B30E37;
+}
+textarea {
+  border: 1px solid #C9B269;
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 10px;
+}
+textarea:focus {
+  outline: 1px solid #B30E37;
 }
 
-/*Top Navigation Bar Elements*/
+/********************************* HEADER *************************************/
+header {
+  padding: 2em;
+  padding-top: 2.5em;
+  padding-bottom: 1.8em;
+  color: black;
+  background-color: white;
+  clear: left;
+  text-align: center;
+}
+
+/******************************* NAVIGATION ***********************************/
+
+/*Top Navigation Bar*/
 nav[role="top"] {
-    width: 100%;
-    float: left;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  width: 100%;
+  float: left;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 nav[role="top"] ul {
-    display: inline-block;
-    text-align: center;
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
+  display: inline-block;
+  text-align: center;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
 }
 nav[role="top"] ul li {
-    float: left;
-    text-align: left;
+  float: left;
+  text-align: left;
 }
 nav[role="top"] ul li a {
-    display: inline-block;
-    color: #C9B269;
-    font-size: 20px;
-    font-weight: 400;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: left;
-    padding: 15px 36px 25px 36px;
-    text-decoration: none;
+  display: inline-block;
+  color: #C9B269;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: left;
+  padding: 15px 36px 25px 36px;
+  text-decoration: none;
 }
 nav[role="top"] ul li a:hover {
 	color: #B30E37;
 }
 
-/*Side Navigation Bar Elements*/
+/*Side Navigation Bar*/
 nav[role="side"] {
-    float: left;
-    text-align: center;
-    z-index:1;
-    position: fixed;
-    top: 24%;
-    left: 78%;
+  float: left;
+  text-align: center;
+  z-index:1;
+  position: fixed;
+  top: 24%;
+  left: 78%;
 }
 nav[role="side"] ul {
-    display: inline-block;
-    width: 210px;
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 20px;
-    overflow: hidden;
-    background-color: none;
-    text-align: right;
-    list-style-position: inside;
+  display: inline-block;
+  width: 210px;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
+  background-color: none;
+  text-align: right;
+  list-style-position: inside;
 }
 nav[role="side"] ul li {
     text-align: right;
     margin: 0;
 }
 nav[role="side"] ul li a {
-    padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    color: #C9B269;
-    text-align: right;
-    text-decoration: none;
-    border: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #C9B269;
+  text-align: right;
+  text-decoration: none;
+  border: 0;
 }
 nav[role="side"] ul li a:hover {
-    color: #B30E37;
+  color: #B30E37;
 }
 nav[role="side"] ul li a.active {
-    color: #B30E37;
+  color: #B30E37;
 }
 nav[role="side"] ul li a.circle {
-    background-color: transparent;
-  	border-radius: 50%;
-  	border: 1px solid #C9B269;
-  	margin-left: 10px;
-  	padding: 5px;
-  	display: inline-block;
-  	font-family: 'Source Sans Pro', sans-serif;
-	  font-size: 12px;
+  background-color: transparent;
+	border-radius: 50%;
+	border: 1px solid #C9B269;
+	margin-left: 10px;
+	padding: 5px;
+	display: inline-block;
+	font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
 }
 nav[role="side"] ul li a.circle:hover {
-    border-radius: 50%;
-    border: 1px solid #B30E37;
-    background-color: #B30E37;
+  border-radius: 50%;
+  border: 1px solid #B30E37;
+  background-color: #B30E37;
 }
 nav[role="side"] ul li a.circle_active {
   background-color: #B30E37;
@@ -291,26 +244,90 @@ nav[role="side"] ul li a.circle_active {
   font-size: 12px;
 }
 
-/*Form Elements*/
-form {
-    font-family: 'Source Sans Pro', sans-serif;
-    display: inline;
-    float: left;
-    padding: 20px;
+/******************************* MAIN CONTENT *********************************/
+
+/*Specialized Divs*/
+.container {
+  background-color: white;
+  margin: 0;
+  padding: 0;
 }
-input[type=text] {
-    width: 300px;
-    box-sizing: border-box;
-    border: 1px solid #C9B269;
-    border-radius: 0px;
-    font-size: 14px;
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: white;
-    padding: 10px;
+
+.section {
+	background-color: white;
+  color:#C9B269;
+  padding: 20px;
+  display: block;
+  overflow: hidden;
 }
-input[type=text]:focus {
-    outline: 1px solid #B30E37;
+
+.form-container {
+  margin: 0 auto;
+  width: 80%;
 }
+
+.image {
+	display: block;
+	position: relative;
+	margin-top: 50px;
+  width: 100%;
+  height: 600px;
+  background-image: url(KayInLAImages/KayInLA_Background.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.logo-with-text {
+  width: 44%;
+	height: auto;
+  top: 23%;
+  left: 26%;
+  position: absolute;
+	padding: 15px;
+	margin: 20px;
+  border: 1px solid #C9B269;
+  background-color: white;
+  outline: 2px solid #C9B269;
+  outline-offset: -10px;
+}
+
+.text-with-border {
+  width: 55%;
+  height: auto;
+  padding: 20px 40px;
+  margin: 20px;
+  top: 25%;
+  left: 18%;
+  position: absolute;
+  border: 1px solid #C9B269;
+  background-color: white;
+  outline: 2px solid #C9B269;
+  outline-offset: -10px;
+}
+
+.store-image {
+  margin: 10px 30px 20px 40px;
+  float: left;
+  width: 25%;
+}
+
+.description {
+  padding: 15px;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+}
+.description a {
+	color: #C9B269;
+}
+
+/*Spans*/
+span.note {
+  font-size: 100%;
+  color: rgb(200,200,200);
+}
+
+/*Specialized Forms*/
 input[type=submit].contact {
   background-color: #B30E37;
   color: white;
@@ -331,20 +348,9 @@ input[type=submit].contact:hover {
   border: 2px solid #C9B269;
   font-weight: bold;
 }
-textarea {
-    border: 1px solid #C9B269;
-    font-size: 14px;
-    font-family: 'Source Sans Pro', sans-serif;
-    padding: 10px;
-}
-textarea:focus {
-    outline: 1px solid #B30E37;
-}
-span.note {
-    font-size: 100%;
-    color: rgb(200,200,200);
-}
-button[type=button].loadmore {
+
+/*Specialized Buttons*/
+button[type=button].load-more {
   background-color: white;
   color: #B30E37; width: 20%;
   font-family: 'Source Sans Pro', sans-serif;
@@ -355,23 +361,24 @@ button[type=button].loadmore {
   clear: both;
   margin-top: 20px;
 }
-button[type=button].loadmore:hover {
+button[type=button].load-more:hover {
 	background-color: #C9B269;
 }
 
-/*Table*/
-table {
-    padding: 20px;
+/********************************** FOOTER ************************************/
+footer {
+  padding: 3em;
+  color: white;
+  background-color: #B30E37;
+  clear: left;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
-td.par {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-/*Body Elements*/
-article {
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 1em;
-    overflow: hidden;
+footer a {
+	color: white;
 }
