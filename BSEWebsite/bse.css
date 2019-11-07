@@ -414,8 +414,8 @@ img.welcome {
 img.badge {
   width: 150px;
   height: 150px;
-  padding: 0px 25px;
-  margin: 10px;
+  padding: 0px 2.5%;
+  margin: 1%;
   background-color: #FFF;
   float: left;
   display: inline-block;
