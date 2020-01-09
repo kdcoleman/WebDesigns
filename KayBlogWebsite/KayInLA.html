@@ -87,9 +87,7 @@
 		    </div>
 
 		    <div class="store-image">
-		      <img class="item" src="KayInLAImages/MKshirt1.png" alt="Michael Kors black shirt"
-						onmouseover="this.src='KayInLAImages/MKshirt2.png';"
-						onmouseout="this.src='KayInLAImages/MKshirt1.png';">
+		      <img id="mkShirtImg" class="item" src="KayInLAImages/MKshirt1.png" alt="Michael Kors black shirt">
 		      <div class="description">
 						<a href="#">Michael Kors Faux Leather Shirt</a><br>$15.00
 					</div>
@@ -117,7 +115,7 @@
 		    </div>
 
 			  <div id="center">
-			  	<button class="load-more" type="button" onclick="alert('More Products Coming Soon!')">LOAD MORE</button>
+			  	<button id="loadMore" class="load-more" type="button">LOAD MORE</button>
 			  </div>
 
 			</div>
@@ -179,6 +177,7 @@
 
 		<!-- JAVASCRIPT -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="kayinla.js"></script>
 		<script>
 		/* Highlights the current page while scrolling */
 			$(window).scroll(function() {
