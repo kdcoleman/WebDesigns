@@ -147,19 +147,26 @@
 				</p>
 
 				<div class="form-container">
-						<form action="email.php" method="post">
-				  		First Name <span class="note">(required)</span><br>
-				  		<input type="text" name="first_name"><br><br>
-				  		Last Name <span class="note">(required)</span><br>
-				  		<input type="text" name="last_name"><br><br>
-				  		Email <span class="note">(required)</span><br>
-				  		<input type="text" name="email">
-						</form>
-
-				  	<form action="email.php" method="post">
-				  		Message <span class="note">(required)</span><br>
-				  		<textarea rows="8" name="message" cols="70"></textarea><br>
-				  		<input class="contact" type="submit" name="Send" value="SUBMIT" align="right">
+					<form action="email.php" method="post">
+						<div class="leftside">
+				  		<label for="first_name">First Name</label>
+							<span class="note">(required)</span><br>
+				  		<input type="text" name="first_name">
+							<br><br>
+				  		<label for="last_name">Last Name</label>
+							<span class="note">(required)</span><br>
+				  		<input type="text" name="last_name">
+							<br><br>
+				  		<label for="email">Email</label>
+							<span class="note">(required)</span><br>
+				  		<input type="text" name="email"><br>
+						</div>
+						<div class="rightside">
+				  		<label for="message">Message</label>
+							<span class="note">(required)</span><br>
+				  		<textarea rows="8" name="message" cols="50"></textarea><br>
+				  		<button id="sendEmail" class="contact" type="submit" name="sendEmail">SEND</button>
+						</div>
 						</form>
 				</div>
 			</div>

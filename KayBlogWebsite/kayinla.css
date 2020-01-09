@@ -106,7 +106,9 @@ form {
   display: inline;
   float: left;
   padding: 20px;
+  width: 100%;
 }
+
 input[type=text] {
   width: 300px;
   box-sizing: border-box;
@@ -277,6 +279,22 @@ nav[role="side"] ul li a.circle_active {
   width: 80%;
 }
 
+.leftside {
+  width: 40%;
+  display: inline-block;
+  margin-left: 30px;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+
+.rightside {
+  width: 45%;
+  display: inline-block;
+  margin-right: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
 .image {
 	display: block;
 	position: relative;
@@ -339,31 +357,27 @@ span.note {
 }
 
 /*Specialized Forms*/
-input[type=submit].contact {
+button[type=submit].contact {
   background-color: #B30E37;
   color: #FFF;
   width: 80px;
   height: 40px;
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
   border-radius: 5px;
   border: 1px solid #B30E37;
-  font-weight: bold;
+  float: right;
 }
-input[type=submit].contact:hover {
-  background-color: #B30E37;
-  color: #FFF;
-  width: 80px;
-  height: 40px;
-  font-family: 'Source Sans Pro', sans-serif;
-  border-radius: 5px;
+button[type=submit].contact:hover {
   border: 2px solid #C9B269;
-  font-weight: bold;
 }
 
 /*Specialized Buttons*/
-button[type=button].load-more {
+button.load-more {
   background-color: #FFF;
-  color: #B30E37; width: 20%;
+  color: #B30E37;
+  width: 20%;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   border-radius: 0;
@@ -372,7 +386,7 @@ button[type=button].load-more {
   clear: both;
   margin-top: 20px;
 }
-button[type=button].load-more:hover {
+button.load-more:hover {
 	background-color: #C9B269;
 }
 
