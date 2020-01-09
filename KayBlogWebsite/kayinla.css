@@ -289,8 +289,7 @@ nav[role="side"] ul li a.circle_active {
 .rightside {
   width: 45%;
   display: inline-block;
-  margin-right: 20px;
-  padding-right: 20px;
+  margin-left: 10px;
   box-sizing: border-box;
 }
 
@@ -366,7 +365,6 @@ button[type=submit].contact {
   font-weight: bold;
   border-radius: 5px;
   border: 1px solid #B30E37;
-  float: right;
 }
 button[type=submit].contact:hover {
   border: 2px solid #C9B269;
