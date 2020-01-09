@@ -130,6 +130,17 @@ textarea:focus {
   outline: 1px solid #B30E37;
 }
 
+/* Images */
+img {
+  width: 100%;
+}
+img.logo {
+  width: 55%;
+}
+img.item {
+  height: 350px;
+}
+
 /********************************* HEADER *************************************/
 header {
   padding: 2em;
