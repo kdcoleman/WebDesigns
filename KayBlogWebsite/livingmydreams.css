@@ -126,6 +126,16 @@ textarea:focus {
   outline: 1px solid rgb(111, 156, 156);
 }
 
+/* Images */
+img {
+  width: 100%;
+}
+
+img.home {
+  width: auto;
+  height: 450px;
+}
+
 /********************************* HEADER *************************************/
 header {
   padding: 2em;
