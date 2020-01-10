@@ -159,6 +159,7 @@ hr {
     height: 3px;
     color: #CCAF6D;
     background-color: #CCAF6D;
+    width: 65%;
   }
 
 /*Figures*/
@@ -256,6 +257,10 @@ header {
   clear: left;
   text-align: center;
   margin-top: 0;
+}
+
+img.logo {
+  width: 60%;
 }
 
 /******************************* NAVIGATION ***********************************/
@@ -403,6 +408,8 @@ img.home {
   border: 2px solid #FFF;
   box-shadow: 0 0 3px #B8ADAD;
   margin: 0 5px;
+  width: 305px;
+  height: 458px;
 }
 img.welcome {
   float: right;
@@ -410,6 +417,8 @@ img.welcome {
   border: 2px solid #FFF;
   box-shadow: 0 0 3px #B8ADAD;
   position: relative;
+  width: 321px;
+  height: 398px;
 }
 img.badge {
   width: 150px;
@@ -432,17 +441,23 @@ img.contact {
   float: left;
   border: 2px solid #FFF;
   box-shadow: 0 0 3px #B8ADAD;
+  width: 335px;
+  height: 232px;
 }
 img.package {
   float: right;
   margin-left: 80px;
   border: 2px solid #FFF;
   box-shadow: 0 0 3px #B8ADAD;
+  width: 368px;
+  height: 462px;
 }
 img.love {
   float: left;
   margin-right: 50px;
   box-shadow: 7px 7px #CCAF6D;
+  width: 155px;
+  height: 187px;
 }
 
 /********************************** FOOTER ************************************/
@@ -469,4 +484,6 @@ footer {
 }
 .social-bar img {
   padding: 0 10px;
+  width: 25px;
+  height: 25px;
 }
