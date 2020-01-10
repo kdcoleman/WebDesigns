@@ -344,17 +344,17 @@ input[type=text].search:focus {
 }
 
 /*Specialized Forms*/
-input[type=submit].contact {
+button[type=submit].contact {
   background-color: rgb(52, 123, 124);
   color: #FFF;
-  width: 80px;
+  width: 100px;
   height: 40px;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
   border-radius: 5px;
   border: 1px solid rgb(52,123,124);
 }
-input[type=submit].contact:hover {
+button[type=submit].contact:hover {
   border: 2px solid #000;
 }
 
