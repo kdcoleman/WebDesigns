@@ -18,4 +18,4 @@ The static HTML pages are similar to the event planning website: [B. Still Event
 
 * Add responsive design code to CSS stylesheet
 * Add blog page layouts for KayBlog and BSE
-* Add code to show most recent blog post on side navigation bar
+* Extend projects using Django to incorporate blog pages
